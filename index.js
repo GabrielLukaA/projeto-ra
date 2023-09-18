@@ -40,3 +40,5 @@ exampleTarget.addEventListener("targetFound", event => {
     let campoTexto  = document.querySelector('#paragraph');
     campoTexto.innerHTML = equipamentos[0];
   });
+
+  window.location.href = 'index.html'
