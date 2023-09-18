@@ -41,4 +41,4 @@ exampleTarget.addEventListener("targetFound", event => {
     campoTexto.innerHTML = equipamentos[0];
   });
 
-  window.location.href = 'index.html'
+  
