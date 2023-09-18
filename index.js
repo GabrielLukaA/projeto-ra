@@ -2,5 +2,5 @@ let cam = document.querySelector('#oi');
 
 
 function bucejo(){
-cam.classList.add('hidden')
+cam.classList.remove('hidden')
 }
