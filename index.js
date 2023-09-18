@@ -29,5 +29,5 @@
 //  camera.classList.add("hidden")
 // });
 function vamoporra(){
-    window.location.href('camera.html')
+    window.location.href = 'camera.html';
 }
