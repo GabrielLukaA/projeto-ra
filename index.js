@@ -39,7 +39,9 @@ exampleTarget.addEventListener("targetFound", event => {
     window.location.href = 'card.html';
     let campoTexto  = document.querySelector('#paragraph');
     alert(equipamentos[0])
+    alert(campoTexto.innerText)
     campoTexto.innerText = equipamentos[0];
-  });
+    alert(campoTexto.innerText)  
+});
 
   
