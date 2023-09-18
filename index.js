@@ -5,7 +5,7 @@ let title = document.querySelector('#bah');
 
 const startARButton = document.getElementById('startARButton');
 const hideARButton = document.getElementById('hideARButton');
-const camera = document.querySelector('a-camera');
+const camera = document.querySelector('a-scene');
 camera.setAttribute('look-controls', 'enabled', false);
 
 startARButton.addEventListener('click', () => {
@@ -15,6 +15,7 @@ startARButton.addEventListener('click', () => {
  hideARButton.style.display = 'block';
  // Ativar a câmera
  camera.setAttribute('look-controls', 'enabled', true);
+ camera.classList.remove("hidden")
 });
 
 hideARButton.addEventListener('click', () => {
@@ -24,4 +25,5 @@ hideARButton.addEventListener('click', () => {
  hideARButton.style.display = 'none';
  // Desativar a câmera
  camera.setAttribute('look-controls', 'enabled', false);
+ camera.classList.add("hidden")
 });
