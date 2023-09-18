@@ -1,4 +1,4 @@
-// let cam = document.querySelector('#oi');
+let exampleTarget = document.querySelector('#oi');
 // let cena = document.querySelector('#papai');
 // let title = document.querySelector('#bah');
 
@@ -28,6 +28,15 @@
 //  camera.setAttribute('look-controls', 'enabled', false);
 //  camera.classList.add("hidden")
 // });
+
+let  equipamentos = [];
+equipamentos.push('Betoneira')
 function vamoporra(){
     window.location.href = 'camera.html';
 }
+
+exampleTarget.addEventListener("targetFound", event => {
+    window.location.href = 'camera.html';
+    let campoTexto  = document.querySelector('#paragraph');
+    campoTexto.innerHTML = equipamentos[0];
+  });
