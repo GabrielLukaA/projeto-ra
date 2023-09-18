@@ -44,6 +44,10 @@ exampleTarget.addEventListener("targetFound", event => {
     alert(campoTexto.innerText)
     campoTexto.textContent = ""+equipamentos[0];
     alert(campoTexto.innerText)  
+    let porra = document.createElement('p')
+    porra.innerText = equipamentos[0]
+
+    campoTexto.appendChild(porra);
 });
 
   
