@@ -40,7 +40,7 @@ exampleTarget.addEventListener("targetFound", event => {
     let campoTexto  = document.querySelector('#paragraph');
     alert(equipamentos[0])
     alert(campoTexto.innerText)
-    campoTexto.innerText = equipamentos[0];
+    campoTexto.textContent = ""+equipamentos[0];
     alert(campoTexto.innerText)  
 });
 
