@@ -28,3 +28,6 @@
 //  camera.setAttribute('look-controls', 'enabled', false);
 //  camera.classList.add("hidden")
 // });
+function vamoporra(){
+    window.location.href('camera.html')
+}
