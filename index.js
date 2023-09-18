@@ -36,7 +36,7 @@ function vamoporra(){
 }
 
 exampleTarget.addEventListener("targetFound", event => {
-    window.location.href = 'camera.html';
+    window.location.href = 'card.html';
     let campoTexto  = document.querySelector('#paragraph');
     campoTexto.innerHTML = equipamentos[0];
   });
