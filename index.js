@@ -7,6 +7,7 @@ const startARButton = document.getElementById('startARButton');
 const hideARButton = document.getElementById('hideARButton');
 const camera = document.querySelector('a-scene');
 camera.setAttribute('look-controls', 'enabled', false);
+camera.classList.add("hidden")
 
 startARButton.addEventListener('click', () => {
  // Esconder o botão de iniciar
