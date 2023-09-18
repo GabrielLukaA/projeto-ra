@@ -27,9 +27,8 @@
     <div class="w-screen h-screen items-center">
         <button class="py-[200px] absolute z-50 bg-blue-600" onclick="bucejo()">OI 9vinha</button>
 <h1 class="bg-red-500 font-bold text-2xl hidden" id="bah">EU TO NESSA PORRA CARALHO</h1>
+<h5>sdjksjssadksdljsdaklçasdlçaslçlçadsklç çrjnoçi ipfk nijnm fnem  gay</h5>
 <h2>salve thiago do vrau</h2>
-<div id="oi" class="hidden">
-    <h1>OI eu sou a camera</h1>
     <a-scene
     mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/card.mind;"
     color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
@@ -42,7 +41,7 @@
         </a-asset-item>
     </a-assets>
 
-    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+    <a-camera  id="oi" class="hidden" position="0 0 0" look-controls="enabled: false"></a-camera>
 
     <a-entity mindar-image-target="targetIndex: 0">
         <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
@@ -51,7 +50,6 @@
     </a-entity>
 </a-scene>
 
-</div>
   
 </div>
 <script src="index.js"></script>
