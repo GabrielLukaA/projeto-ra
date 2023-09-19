@@ -50,6 +50,9 @@ exampleTarget.addEventListener("targetFound", event => {
     var texto = document.createTextNode(equipamentos[0]);
     porra.appendChild(texto);
     campoTexto.appendChild(porra);
+
+    alert(document.querySelector('p'))
+
 });
 
   
