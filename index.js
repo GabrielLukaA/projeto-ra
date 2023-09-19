@@ -31,6 +31,7 @@ let exampleTarget = document.querySelector('#oi');
 
 let  equipamentos = [];
 equipamentos.push('Betoneira')
+
 function vamoporra(){
     window.location.href = 'camera.html';
 }
@@ -38,7 +39,7 @@ function vamoporra(){
 exampleTarget.addEventListener("targetFound", event => {
     window.location.href = 'card.html';
     alert(equipamentos[0])
-    let campoTexto = document.querySelector('#texto')
+    let campoTexto = document.getElementById('texto')
     // async () =>{alert(document.querySelector('#texto'))}
     alert(campoTexto)
     // alert(document.getElementById('texto'))
