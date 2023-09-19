@@ -52,6 +52,7 @@ exampleTarget.addEventListener("targetFound", event => {
     campoTexto.appendChild(porra);
 
     alert(document.querySelector('p'))
+    alert('opa')
 
 });
 
