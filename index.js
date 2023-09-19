@@ -47,7 +47,10 @@ exampleTarget.addEventListener("targetFound", event => {
     let porra = document.createElement('p')
     alert(porra)
     alert(porra.innerText)
+    alert(porra.innerHTML)
+    alert(porra.textContent)
     porra.innerText = equipamentos[0]
+    porra.innerHTML = equipamentos[0]
     alert(porra.innerText)
     // var texto = document.createTextNode(equipamentos[0]);
     // porra.appendChild(texto);
