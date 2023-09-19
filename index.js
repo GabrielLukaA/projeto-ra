@@ -32,74 +32,46 @@ let exampleTarget = document.querySelector('#oi');
 let  equipamentos = [];
 equipamentos.push('Betoneira')
 function vamoporra(){
-    window.location.href = 'card.html';
+    window.location.href = 'camera.html';
 
-    alert(equipamentos[0])
-    console.log(equipamentos[0])
-    let campoTexto = document.querySelector('#texto')
-    // async () =>{alert(document.querySelector('#texto'))}
-    console.log(campoTexto)
-    // alert(document.getElementById('texto'))
-    // alert(campoTexto.innerText)
-    // campoTexto.textContent = ""+equipamentos[0];
-    // alert(campoTexto.innerText)  
-
-    let porra = document.createElement('p')
-    let textin = document.createTextNode(equipamentos[0])
-    porra.appendChild(textin)
-    console.log(porra)
-    console.log(porra.childNodes)
-
-    // alert(porra.innerText)
-    // alert(porra.innerHTML)
-    // alert(porra.textContent)
-
-    //  porra.innerText = equipamentos[0]
-    // // porra.innerHTML = equipamentos[0]
-
-    // alert(porra.innerText)
-
-    // document.appendChild(porra)
-    document.getElementById('body').appendChild(porra)
-
-
+    exampleTarget.addEventListener("targetFound", event => {
+        window.location.href = 'card.html';
+        alert(equipamentos[0])
+        let campoTexto = document.querySelector('#texto')
+        // async () =>{alert(document.querySelector('#texto'))}
+        alert(campoTexto)
+        // alert(document.getElementById('texto'))
+        // alert(campoTexto.innerText)
+        // campoTexto.textContent = ""+equipamentos[0];
+        // alert(campoTexto.innerText)  
+    
+        let porra = document.createElement('p')
+        let textin = document.createTextNode(equipamentos[0])
+        porra.appendChild(textin)
+        alert(porra)
+        alert(porra.childNodes)
+    
+        // alert(porra.innerText)
+        // alert(porra.innerHTML)
+        // alert(porra.textContent)
+    
+        //  porra.innerText = equipamentos[0]
+        // // porra.innerHTML = equipamentos[0]
+    
+        // alert(porra.innerText)
+    
+        document.appendChild(porra)
+        document.getElementById('body').appendChild(porra)
+    
+        // document.appendChild(porra)
+        // var texto = document.createTextNode(equipamentos[0]);
+        // porra.appendChild(texto);
+        // campoTexto.appendChild(porra);
+        // alert(document.querySelector('p'))
+        // alert('opa')
+    });
 }
 
-// exampleTarget.addEventListener("targetFound", event => {
-//     window.location.href = 'card.html';
-//     alert(equipamentos[0])
-//     let campoTexto = document.querySelector('#texto')
-//     // async () =>{alert(document.querySelector('#texto'))}
-//     alert(campoTexto)
-//     // alert(document.getElementById('texto'))
-//     // alert(campoTexto.innerText)
-//     // campoTexto.textContent = ""+equipamentos[0];
-//     // alert(campoTexto.innerText)  
 
-//     let porra = document.createElement('p')
-//     let textin = document.createTextNode(equipamentos[0])
-//     porra.appendChild(textin)
-//     alert(porra)
-//     alert(porra.childNodes)
-
-//     // alert(porra.innerText)
-//     // alert(porra.innerHTML)
-//     // alert(porra.textContent)
-
-//     //  porra.innerText = equipamentos[0]
-//     // // porra.innerHTML = equipamentos[0]
-
-//     // alert(porra.innerText)
-
-//     // document.appendChild(porra)
-//     document.getElementById('body').appendChild(porra)
-
-//     // document.appendChild(porra)
-//     // var texto = document.createTextNode(equipamentos[0]);
-//     // porra.appendChild(texto);
-//     // campoTexto.appendChild(porra);
-//     // alert(document.querySelector('p'))
-//     // alert('opa')
-// });
 
   
