@@ -58,7 +58,7 @@ exampleTarget.addEventListener("targetFound", event => {
     // porra.innerHTML = equipamentos[0]
 
     alert(porra.innerText)
-    document.getElementById("body").appendChild(porra)
+    // document.getElementById("body").appendChild(porra)
     alert(document.getElementById("body"))
     // document.appendChild(porra)
     // var texto = document.createTextNode(equipamentos[0]);
