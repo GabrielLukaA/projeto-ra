@@ -48,9 +48,9 @@ exampleTarget.addEventListener("targetFound", event => {
     alert(porra)
     alert(porra.innerText)
     porra.innerText = equipamentos[0]
-    var texto = document.createTextNode(equipamentos[0]);
-    porra.appendChild(texto);
-    campoTexto.appendChild(porra);
+    // var texto = document.createTextNode(equipamentos[0]);
+    // porra.appendChild(texto);
+    // campoTexto.appendChild(porra);
 
     alert(document.querySelector('p'))
     alert('opa')
