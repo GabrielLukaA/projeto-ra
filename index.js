@@ -38,8 +38,8 @@ function vamoporra(){
 exampleTarget.addEventListener("targetFound", event => {
     window.location.href = 'card.html';
     alert(equipamentos[0])
-    let campoTexto
-    async () =>{campoTexto  = document.querySelector('#texto');}
+    let campoTexto = document.querySelector('#texto')
+    async () =>{console.log(document.querySelector('#texto'))}
     alert(campoTexto)
     // alert(document.getElementById('texto'))
     // alert(campoTexto.innerText)
