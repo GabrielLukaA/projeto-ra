@@ -79,4 +79,4 @@ exampleTarget.addEventListener("targetFound", async event => {
    
 });
 
-  
+  //cpa que fazemos na propria camera.html mesmo e ver se da
