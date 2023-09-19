@@ -32,7 +32,7 @@ let exampleTarget = document.querySelector('#oi');
 let  equipamentos = [];
 equipamentos.push('Betoneira')
 function vamoporra(){
-    window.location.href = 'camera.html';
+    window.location.href = 'card.html';
 }
 
 exampleTarget.addEventListener("targetFound", event => {
