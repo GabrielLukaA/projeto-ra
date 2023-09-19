@@ -47,8 +47,10 @@ exampleTarget.addEventListener("targetFound", event => {
     // alert(campoTexto.innerText)  
 
     let porra = document.createElement('p')
-
+    let textin = document.createTextNode(equipamentos[0])
+    porra.appendChild(textin)
     alert(porra)
+    alert(porra.childNodes)
 
     // alert(porra.innerText)
     // alert(porra.innerHTML)
@@ -59,6 +61,7 @@ exampleTarget.addEventListener("targetFound", event => {
 
     alert(porra.innerText)
 
+    document.appendChild(porra)
     document.getElementById('body').appendChild(porra)
 
     // document.appendChild(porra)
