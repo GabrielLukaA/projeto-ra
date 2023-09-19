@@ -33,6 +33,36 @@ let  equipamentos = [];
 equipamentos.push('Betoneira')
 function vamoporra(){
     window.location.href = 'card.html';
+
+
+    console.log(equipamentos[0])
+    let campoTexto = document.querySelector('#texto')
+    // async () =>{alert(document.querySelector('#texto'))}
+    console.log(campoTexto)
+    // alert(document.getElementById('texto'))
+    // alert(campoTexto.innerText)
+    // campoTexto.textContent = ""+equipamentos[0];
+    // alert(campoTexto.innerText)  
+
+    let porra = document.createElement('p')
+    let textin = document.createTextNode(equipamentos[0])
+    porra.appendChild(textin)
+    console.log(porra)
+    console.log(porra.childNodes)
+
+    // alert(porra.innerText)
+    // alert(porra.innerHTML)
+    // alert(porra.textContent)
+
+    //  porra.innerText = equipamentos[0]
+    // // porra.innerHTML = equipamentos[0]
+
+    // alert(porra.innerText)
+
+    // document.appendChild(porra)
+    document.getElementById('body').appendChild(porra)
+
+
 }
 
 exampleTarget.addEventListener("targetFound", event => {
