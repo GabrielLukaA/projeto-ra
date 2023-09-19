@@ -39,7 +39,7 @@ exampleTarget.addEventListener("targetFound", event => {
     window.location.href = 'card.html';
     alert(equipamentos[0])
     let campoTexto = document.querySelector('#texto')
-    async () =>{console.log(document.querySelector('#texto'))}
+    async () =>{alert(document.querySelector('#texto'))}
     alert(campoTexto)
     // alert(document.getElementById('texto'))
     // alert(campoTexto.innerText)
@@ -54,11 +54,12 @@ exampleTarget.addEventListener("targetFound", event => {
     // alert(porra.innerHTML)
     // alert(porra.textContent)
 
-    porra.innerText = equipamentos[0]
-    porra.innerHTML = equipamentos[0]
+    // porra.innerText = equipamentos[0]
+    // porra.innerHTML = equipamentos[0]
 
     alert(porra.innerText)
     document.getElementById("body").appendChild(porra)
+    alert(document.getElementById("body"))
     // document.appendChild(porra)
     // var texto = document.createTextNode(equipamentos[0]);
     // porra.appendChild(texto);
