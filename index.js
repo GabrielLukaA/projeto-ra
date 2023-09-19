@@ -61,7 +61,7 @@ exampleTarget.addEventListener("targetFound", event => {
 
     // alert(porra.innerText)
 
-    document.appendChild(porra)
+    // document.appendChild(porra)
     document.getElementById('body').appendChild(porra)
 
     // document.appendChild(porra)
