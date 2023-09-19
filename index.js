@@ -35,11 +35,14 @@ equipamentos.push('Betoneira')
 function vamoporra(){
     window.location.href = 'camera.html';
 }
+function alterarPagina(){
+    window.location.href =  'card.html';
+    return true;
+}
 
-exampleTarget.addEventListener("targetFound", event => {
-    window.location.href = 'card.html';
-    alert(document)
-    alert(equipamentos[0])
+exampleTarget.addEventListener("targetFound", async event => {
+    if(alterarPagina()){
+        alert(equipamentos[0])
     let campoTexto = document.getElementById('texto')
     // async () =>{alert(document.querySelector('#texto'))}
     alert(campoTexto)
@@ -72,6 +75,8 @@ exampleTarget.addEventListener("targetFound", event => {
     // campoTexto.appendChild(porra);
     // alert(document.querySelector('p'))
     // alert('opa')
+    }
+   
 });
 
   
