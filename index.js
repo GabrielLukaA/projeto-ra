@@ -44,22 +44,25 @@ exampleTarget.addEventListener("targetFound", event => {
     // alert(campoTexto.innerText)
     // campoTexto.textContent = ""+equipamentos[0];
     // alert(campoTexto.innerText)  
+
     let porra = document.createElement('p')
+
     alert(porra)
-    alert(porra.innerText)
-    alert(porra.innerHTML)
-    alert(porra.textContent)
+
+    // alert(porra.innerText)
+    // alert(porra.innerHTML)
+    // alert(porra.textContent)
+
     porra.innerText = equipamentos[0]
     porra.innerHTML = equipamentos[0]
+
     alert(porra.innerText)
     document.appendChild(porra)
     // var texto = document.createTextNode(equipamentos[0]);
     // porra.appendChild(texto);
     // campoTexto.appendChild(porra);
-
-    alert(document.querySelector('p'))
-    alert('opa')
-
+    // alert(document.querySelector('p'))
+    // alert('opa')
 });
 
   
