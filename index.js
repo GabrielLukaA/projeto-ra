@@ -38,6 +38,7 @@ function vamoporra(){
 
 exampleTarget.addEventListener("targetFound", event => {
     window.location.href = 'card.html';
+    alert(document)
     alert(equipamentos[0])
     let campoTexto = document.getElementById('texto')
     // async () =>{alert(document.querySelector('#texto'))}
