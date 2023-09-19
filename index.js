@@ -56,10 +56,10 @@ exampleTarget.addEventListener("targetFound", event => {
     // alert(porra.innerHTML)
     // alert(porra.textContent)
 
-     porra.innerText = equipamentos[0]
-    // porra.innerHTML = equipamentos[0]
+    //  porra.innerText = equipamentos[0]
+    // // porra.innerHTML = equipamentos[0]
 
-    alert(porra.innerText)
+    // alert(porra.innerText)
 
     document.appendChild(porra)
     document.getElementById('body').appendChild(porra)
