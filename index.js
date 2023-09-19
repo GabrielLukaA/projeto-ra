@@ -42,7 +42,7 @@ exampleTarget.addEventListener("targetFound", event => {
     alert(campoTexto)
     // alert(document.getElementById('texto'))
     // alert(campoTexto.innerText)
-    campoTexto.textContent = ""+equipamentos[0];
+    // campoTexto.textContent = ""+equipamentos[0];
     // alert(campoTexto.innerText)  
     let porra = document.createElement('p')
     alert(porra)
