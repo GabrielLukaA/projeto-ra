@@ -1,16 +1,13 @@
-let exampleTarget = document.querySelector('#oi');
+let exampleTarget = document.querySelector('#targetImage');
 
 let  equipamentos = [];
 equipamentos.push('Betoneira')
 
-let button = document.querySelector('#hideARButton')
 
-button.classList.remove("bg-red-500")
-button.classList.add("bg-blue-500")
-
-function vamoporra(){
+function direcionarCamera(){
     window.location.href = 'camera.html';
 }
+
 function alterarPagina(){
     window.location.href =  'card.html';
     return true;
@@ -23,18 +20,18 @@ exampleTarget.addEventListener("targetFound", async event => {
 
     alert(campoTexto)
 
-    let porra = document.createElement('p')
-    let textin = document.createTextNode(equipamentos[0])
-    porra.appendChild(textin)
-    alert(porra)
-    alert(porra.childNodes)
+    // let porra = document.createElement('p')
+    // let textin = document.createTextNode(equipamentos[0])
+    // porra.appendChild(textin)
+    // alert(porra)
+    // alert(porra.childNodes)
 
-     porra.innerText = equipamentos[0]
+    //  porra.innerText = equipamentos[0]
 
-    alert(porra.innerText)
+    // alert(porra.innerText)
 
-    document.appendChild(porra)
-    document.getElementById('body').appendChild(porra)
+    // document.appendChild(porra)
+    // document.getElementById('body').appendChild(porra)
     }
    
 });
