@@ -11,6 +11,8 @@ function direcionarCamera(){
 
 exampleTarget.addEventListener("targetFound", async event => {
     window.location.href =  'card.html';
+    
 });
 
   //cpa que fazemos na propria camera.html mesmo e ver se da
+    //q nada irmao samo bomd+
