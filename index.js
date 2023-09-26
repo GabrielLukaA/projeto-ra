@@ -11,7 +11,8 @@ function direcionarCamera(){
 
 exampleTarget.addEventListener("targetFound", async event => {
     window.location.href =  'card.html';
-    
+    //mandar mensagem ou indice para o local storage e recuperar no outro js
+
 });
 
   //cpa que fazemos na propria camera.html mesmo e ver se da
