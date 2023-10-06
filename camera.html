@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+            }
+        }
+    }
+</script>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+</head>
+
+<body>
+    <h1>camera yayayyay</h1>
+    <a-scene mindar-image="imageTargetSrc: targets.mind;" color-space="sRGB"
+        renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: false">
+        <a-assets>
+            <img id="card"
+                src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/card.png" />
+            <a-asset-item id="avatarModel"
+                src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/softmind/scene.gltf">
+            </a-asset-item>
+        </a-assets>
+
+        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+        <!-- id="targetImage" class="hidden" -->
+        <a-entity mindar-image-target="targetIndex: 0" id="targetImage0">
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 1" id="targetImage1">
+            <a-entity mindar-image-target="targetIndex: 2" id="targetImage2">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 3" id="targetImage3">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 4" id="targetImage4">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 5" id="targetImage5">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 6" id="targetImage6">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 7" id="targetImage7">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 8" id="targetImage8">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 9" id="targetImage9">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 10" id="targetImage10">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 11" id="targetImage11">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 12" id="targetImage12">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 13" id="targetImage13">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 14" id="targetImage14">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 15" id="targetImage15">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 16" id="targetImage16">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 17" id="targetImage17">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 18" id="targetImage18">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 19" id="targetImage19">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 20" id="targetImage20">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 21" id="targetImage21">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 22" id="targetImage22">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 23" id="targetImage23">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 24" id="targetImage24">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 25" id="targetImage25">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 26" id="targetImage26">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 27" id="targetImage27">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 28" id="targetImage28">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 29" id="targetImage29">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 30" id="targetImage30">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 31" id="targetImage31">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 32" id="targetImage32">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 33" id="targetImage33">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 34" id="targetImage34">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 35" id="targetImage35">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 36" id="targetImage36">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 37" id="targetImage37">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 38" id="targetImage38">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 39" id="targetImage39">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 40" id="targetImage40">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 41" id="targetImage41">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 42" id="targetImage42">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 43" id="targetImage43">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 44" id="targetImage44">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 45" id="targetImage45">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 46" id="targetImage46">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 47" id="targetImage47">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 48" id="targetImage48">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 49" id="targetImage49">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 50" id="targetImage50">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 51" id="targetImage51">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 52" id="targetImage52">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 53" id="targetImage53">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 54" id="targetImage54">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 55" id="targetImage55">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 56" id="targetImage56">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 57" id="targetImage57">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 58" id="targetImage58">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 59" id="targetImage59">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 60" id="targetImage60">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 61" id="targetImage61">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 62" id="targetImage62">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 63" id="targetImage63">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 64" id="targetImage64">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 65" id="targetImage65">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 66" id="targetImage66">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 67" id="targetImage67">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 68" id="targetImage68">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 69" id="targetImage69">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 70" id="targetImage70">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 71" id="targetImage71">
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 72" id="targetImage72">
+            </a-entity>
+                <!-- <a-entity mindar-image-target="targetIndex: 73" id="targetImage73"> -->
+
+
+                <!-- <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane> -->
+
+                <!-- <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#avatarModel"
+                    animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"> -->
+
+    </a-scene>
+    <script src="index.js"></script>
+</body>
+
+</html>
