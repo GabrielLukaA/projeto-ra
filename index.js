@@ -1,4 +1,4 @@
-let exampleTarget = document.querySelector('#targetImage');
+let exampleTarget = document.querySelector('#targetImage0');
 
 let  equipamentos = [];
 equipamentos.push('Betoneira')
