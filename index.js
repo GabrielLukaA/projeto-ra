@@ -1,6 +1,6 @@
 let exampleTarget = document.querySelector('#targetImage0');
-let exampleTarget72 = document.querySelector('#targetImage72');
-let exampleTarget73 = document.querySelector('#targetImage73');
+// let exampleTarget72 = document.querySelector('#targetImage72');
+// let exampleTarget73 = document.querySelector('#targetImage73');
 
 
 let  equipamentos = [];
@@ -9,21 +9,21 @@ equipamentos.push('Betoneira')
 
 function direcionarCamera(){
   alert(exampleTarget)
-  alert(exampleTarget72)
-  alert(exampleTarget73)
+  // alert(exampleTarget72)
+  // alert(exampleTarget73)
     window.location.href = 'camera.html';
 }
 
-exampleTarget72.addEventListener("targetFound", async event => {
-  window.location.href =  'card.html';
-  //mandar mensagem ou indice para o local storage e recuperar no outro js
+// exampleTarget72.addEventListener("targetFound", async event => {
+//   window.location.href =  'card.html';
+//   //mandar mensagem ou indice para o local storage e recuperar no outro js
 
-});
-exampleTarget73.addEventListener("targetFound", async event => {
-  window.location.href =  'card.html';
-  //mandar mensagem ou indice para o local storage e recuperar no outro js
+// });
+// exampleTarget73.addEventListener("targetFound", async event => {
+//   window.location.href =  'card.html';
+//   //mandar mensagem ou indice para o local storage e recuperar no outro js
 
-});
+// });
 
 exampleTarget.addEventListener("targetFound", async event => {
     window.location.href =  'card.html';
