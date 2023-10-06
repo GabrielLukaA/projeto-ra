@@ -8,6 +8,9 @@ equipamentos.push('Betoneira')
 
 
 function direcionarCamera(){
+  console.log(exampleTarget)
+  console.log(exampleTarget72)
+  console.log(exampleTarget73)
     window.location.href = 'camera.html';
 }
 
