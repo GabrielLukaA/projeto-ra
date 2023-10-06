@@ -4,4 +4,4 @@ var cor = "blue"
 
 alert(text)
 
-alert(texto.innerText)
+alert(text.innerText)
