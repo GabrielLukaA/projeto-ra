@@ -1,7 +1,7 @@
-let texto = document.querySelector("#texto")
+let text = document.querySelector("#text")
 
 var cor = "blue"
 
-alert(texto)
+alert(text)
 
 alert(texto.innerText)
