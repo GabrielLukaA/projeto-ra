@@ -78,6 +78,7 @@ function direcionarCamera(){
 }
 
 if(window.location.href == 'camera.html'){
+  console.log("to na camera")
   targetImages.map( (target) => {
     target.addEventListener("targetFound", async event => {
       console.log(target)
