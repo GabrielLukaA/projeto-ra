@@ -16,6 +16,7 @@ if(window.location.pathname == '/camera.html'){
   targetImages.map( (target) => {
     target.addEventListener("targetFound", async event => {
       //Passa para o localStorage o indice do target
+      alert(targetImages.indexOf(target))
       localStorage.setItem('indice', targetImages.indexOf(target))
       //window.location.href =  'card.html';
     });
