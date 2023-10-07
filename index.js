@@ -72,42 +72,41 @@ targetImages.push( document.querySelector('#targetImage69'))
 targetImages.push( document.querySelector('#targetImage70'))
 targetImages.push( document.querySelector('#targetImage71'))
 targetImages.push( document.querySelector('#targetImage72'))
-targetImages.push(43)
 
-let targetImage72 = document.querySelector('#targetImage72')
+let onCamera = false;
+function direcionarCamera(){
+    window.location.href = 'camera.html';
+    onCamera = true
+}
 
-console.log(targetImages)
-
-targetImages.map( (target) => {
-  console.log(target)
-  // target.addEventListener("targetFound", async event => {
-  //   localStorage.setItem('indice', targetImages.indexOf(target))
-  //   // window.location.href =  'card.html';
-  //   console.log(targetImage72)
-  // });
-})
+if(onCamera){
+  targetImages.map( (target) => {
+    target.addEventListener("targetFound", async event => {
+      localStorage.setItem('indice', targetImages.indexOf(target))
+      onCamera = false
+      window.location.href =  'card.html';
+    });
+  })
+}
 
 
 let  equipamentos = [];
 equipamentos.push('Betoneira')
 
 
-function direcionarCamera(){
-    window.location.href = 'camera.html';
-}
 
-console.log(targetImage72)
-targetImage72.addEventListener("targetFound", async event => {
-  targetImage72.setAttribute("value", 72)
-  alert(targetImage72);
-  console.log(targetImage72)
-  console.log(targetImage72.value)
-  localStorage.setItem('indice', 72)
-  // window.location.href =  'card.html';
-  // alert('sou a porra do 72')
-  //mandar mensagem ou indice para o local storage e recuperar no outro js
+// //console.log(targetImage72)
+// targetImage72.addEventListener("targetFound", async event => {
+//   targetImage72.setAttribute("value", 72)
+//   alert(targetImage72);
+//   console.log(targetImage72)
+//   console.log(targetImage72.value)
+//   localStorage.setItem('indice', 72)
+//   // window.location.href =  'card.html';
+//   // alert('sou a porra do 72')
+//   //mandar mensagem ou indice para o local storage e recuperar no outro js
 
-});
+// });
 
 
 // targetImage.addEventListener("targetFound", async event => {
