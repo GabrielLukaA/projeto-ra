@@ -1,5 +1,8 @@
 let targetImages = [];
-targetImages = document.querySelectorAll("a-entity");
+
+document.querySelectorAll("a-entity").forEach( (target) => {
+  targetImages.push()
+})
 
 function direcionarCamera(){
     window.location.href = 'camera.html';
