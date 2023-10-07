@@ -15,6 +15,7 @@ function direcionarCamera(){
 }
 
 exampleTarget72.addEventListener("targetFound", async event => {
+  localStorage.setItem('indice', 72)
   window.location.href =  'card.html';
   alert('sou a porra do 72')
   //mandar mensagem ou indice para o local storage e recuperar no outro js
