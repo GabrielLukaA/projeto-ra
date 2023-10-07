@@ -76,8 +76,8 @@ targetImages.push( document.querySelector('#targetImage72'))
 function direcionarCamera(){
     window.location.href = 'camera.html';
 }
-console.log(window.location.pathname)
-if(window.location.pathname == 'camera.html'){
+
+if(window.location.pathname == '/camera.html'){
   console.log("to na camera")
   targetImages.map( (target) => {
     target.addEventListener("targetFound", async event => {
