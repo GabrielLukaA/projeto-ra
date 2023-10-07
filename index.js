@@ -1,7 +1,7 @@
 let targetImages = [];
 
 document.querySelectorAll("a-entity").forEach( (target) => {
-  targetImages.push()
+  targetImages.push(target)
 })
 
 function direcionarCamera(){
