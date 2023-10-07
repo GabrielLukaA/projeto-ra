@@ -78,11 +78,11 @@ console.log(targetImages)
 
 targetImages.map( (target) => {
   console.log(target)
-  target.addEventListener("targetFound", async event => {
-    localStorage.setItem('indice', targetImages.indexOf(target))
-    // window.location.href =  'card.html';
-    console.log(targetImage72)
-  });
+  // target.addEventListener("targetFound", async event => {
+  //   localStorage.setItem('indice', targetImages.indexOf(target))
+  //   // window.location.href =  'card.html';
+  //   console.log(targetImage72)
+  // });
 })
 
 
