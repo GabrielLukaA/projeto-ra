@@ -74,6 +74,8 @@ targetImages.push( document.querySelector('#targetImage71'))
 targetImages.push( document.querySelector('#targetImage72'))
 targetImages.push(43)
 
+let targetImage72 = document.querySelector('#targetImage72')
+
 console.log(targetImages)
 
 targetImages.map( (target) => {
@@ -94,17 +96,18 @@ function direcionarCamera(){
     window.location.href = 'camera.html';
 }
 
-// targetImage72.addEventListener("targetFound", async event => {
-//   targetImage72.setAttribute("value", 72)
-//   alert(targetImage72);
-//   console.log(targetImage72)
-//   console.log(targetImage72.value)
-//   localStorage.setItem('indice', 72)
-//   // window.location.href =  'card.html';
-//   // alert('sou a porra do 72')
-//   //mandar mensagem ou indice para o local storage e recuperar no outro js
+console.log(targetImage72)
+targetImage72.addEventListener("targetFound", async event => {
+  targetImage72.setAttribute("value", 72)
+  alert(targetImage72);
+  console.log(targetImage72)
+  console.log(targetImage72.value)
+  localStorage.setItem('indice', 72)
+  // window.location.href =  'card.html';
+  // alert('sou a porra do 72')
+  //mandar mensagem ou indice para o local storage e recuperar no outro js
 
-// });
+});
 
 
 // targetImage.addEventListener("targetFound", async event => {
