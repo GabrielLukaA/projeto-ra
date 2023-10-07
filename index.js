@@ -83,6 +83,7 @@ function direcionarCamera(){
 }
 
 targetImage72.addEventListener("targetFound", async event => {
+  targetImage72.setAttribute("value", 72)
   alert(targetImage72);
   console.log(targetImage72)
   console.log(targetImage72.value)
