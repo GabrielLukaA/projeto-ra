@@ -72,10 +72,12 @@ targetImages.push( document.querySelector('#targetImage69'))
 targetImages.push( document.querySelector('#targetImage70'))
 targetImages.push( document.querySelector('#targetImage71'))
 targetImages.push( document.querySelector('#targetImage72'))
+targetImages.push(43)
 
 console.log(targetImages)
 
 targetImages.map( (target) => {
+  console.log(target)
   target.addEventListener("targetFound", async event => {
     localStorage.setItem('indice', targetImages.indexOf(target))
     // window.location.href =  'card.html';
