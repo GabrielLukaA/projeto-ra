@@ -85,8 +85,7 @@ function direcionarCamera(){
 targetImage72.addEventListener("targetFound", async event => {
   alert(targetImage72);
   console.log(targetImage72)
-  console.log(targetImage72.targetIndex)
-  console.log(targetImage72.mindar-image-target)
+  console.log(targetImage72.value)
   localStorage.setItem('indice', 72)
   // window.location.href =  'card.html';
   // alert('sou a porra do 72')
