@@ -1,4 +1,5 @@
 let targetImages  = []
+let targetImages2  = document.querySelectorAll("a-entity")
 targetImages.push( document.querySelector('#targetImage0' ))
 targetImages.push( document.querySelector('#targetImage1' ))
 targetImages.push( document.querySelector('#targetImage2' ))
@@ -73,46 +74,20 @@ targetImages.push( document.querySelector('#targetImage70'))
 targetImages.push( document.querySelector('#targetImage71'))
 targetImages.push( document.querySelector('#targetImage72'))
 
+
+console.log(targetImages2)
 function direcionarCamera(){
     window.location.href = 'camera.html';
 }
 
 if(window.location.pathname == '/camera.html'){
-  console.log("to na camera")
   targetImages.map( (target) => {
     target.addEventListener("targetFound", async event => {
-      console.log(target)
       localStorage.setItem('indice', targetImages.indexOf(target))
       window.location.href =  'card.html';
     });
-  })
+  });
 }
-
-
-let  equipamentos = [];
-equipamentos.push('Betoneira')
-
-
-
-// //console.log(targetImage72)
-// targetImage72.addEventListener("targetFound", async event => {
-//   targetImage72.setAttribute("value", 72)
-//   alert(targetImage72);
-//   console.log(targetImage72)
-//   console.log(targetImage72.value)
-//   localStorage.setItem('indice', 72)
-//   // window.location.href =  'card.html';
-//   // alert('sou a porra do 72')
-//   //mandar mensagem ou indice para o local storage e recuperar no outro js
-
-// });
-
-
-// targetImage.addEventListener("targetFound", async event => {
-//     window.location.href =  'card.html';
-//     //mandar mensagem ou indice para o local storage e recuperar no outro js
-
-// });
 
   //cpa que fazemos na propria camera.html mesmo e ver se da
     //q nada irmao samo bomd+
