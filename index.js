@@ -85,6 +85,8 @@ function direcionarCamera(){
 targetImage72.addEventListener("targetFound", async event => {
   alert(targetImage72);
   console.log(targetImage72)
+  console.log(targetImage72.targetIndex)
+  console.log(targetImage72.mindar-image-target)
   localStorage.setItem('indice', 72)
   // window.location.href =  'card.html';
   // alert('sou a porra do 72')
@@ -93,11 +95,11 @@ targetImage72.addEventListener("targetFound", async event => {
 });
 
 
-targetImage.addEventListener("targetFound", async event => {
-    window.location.href =  'card.html';
-    //mandar mensagem ou indice para o local storage e recuperar no outro js
+// targetImage.addEventListener("targetFound", async event => {
+//     window.location.href =  'card.html';
+//     //mandar mensagem ou indice para o local storage e recuperar no outro js
 
-});
+// });
 
   //cpa que fazemos na propria camera.html mesmo e ver se da
     //q nada irmao samo bomd+
