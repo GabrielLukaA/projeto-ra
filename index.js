@@ -1,11 +1,12 @@
-let targetImages = document.querySelectorAll("a-entity")
+let targetImages = [];
+targetImages = document.querySelectorAll("a-entity");
 
 function direcionarCamera(){
     window.location.href = 'camera.html';
 }
 
 if(window.location.pathname == '/camera.html'){
-  targetImages.forEach( (target) => {
+  targetImages.map( (target) => {
     target.addEventListener("targetFound", async event => {
       localStorage.setItem('indice', targetImages.indexOf(target))
       window.location.href =  'card.html';
