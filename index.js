@@ -73,17 +73,15 @@ targetImages.push( document.querySelector('#targetImage70'))
 targetImages.push( document.querySelector('#targetImage71'))
 targetImages.push( document.querySelector('#targetImage72'))
 
-let onCamera = false;
 function direcionarCamera(){
     window.location.href = 'camera.html';
-    onCamera = true
 }
 
-if(onCamera){
+if(window.location.href == 'camera.html'){
   targetImages.map( (target) => {
     target.addEventListener("targetFound", async event => {
+      console.log(target)
       localStorage.setItem('indice', targetImages.indexOf(target))
-      onCamera = false
       window.location.href =  'card.html';
     });
   })
