@@ -18,7 +18,7 @@ if(window.location.pathname == '/camera.html'){
       //Passa para o localStorage o indice do target
       alert(targetImages.indexOf(target))
       localStorage.setItem('indice', targetImages.indexOf(target))
-      //window.location.href =  'card.html';
+      window.location.href =  'card.html';
     });
   });
 }
