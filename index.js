@@ -17,7 +17,7 @@ if(window.location.pathname == '/camera.html'){
     target.addEventListener("targetFound", async event => {
       //Passa para o localStorage o indice do target
       localStorage.setItem('indice', targetImages.indexOf(target))
-      window.location.href =  'card.html';
+      //window.location.href =  'card.html';
     });
   });
 }
