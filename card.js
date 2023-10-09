@@ -21,7 +21,7 @@ function giraGira(){
     testando.style.width = "600px"
     fundo.classList.add("h-full")
     // testando.style.width = "308px";
-    alert('mudei a width, agora jesus ela é'+testando.width)
+    alert('mudei a width, agora cristo ela é'+testando.width)
     testando.classList.add("rotate-90")
 }
 
