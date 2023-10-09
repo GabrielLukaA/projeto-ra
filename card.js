@@ -17,10 +17,10 @@ function giraGira(){
     // body.classList.remove("flex-col")
     // fundo.classList.remove("w-full")
     fundo.classList.remove("h-[308px]")
-    // fundo.classList.add("w-[536px]")
+    testando.style.width = "600px"
     fundo.classList.add("h-full")
     // testando.style.width = "308px";
-    alert('mudei a width, agora zzzz ela é'+testando.width)
+    alert('mudei a width, agora kkkk ela é'+testando.width)
     testando.classList.add("rotate-90")
 }
 
