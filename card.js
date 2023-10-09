@@ -14,14 +14,15 @@ if (indice==72){
 }
 
 function giraGira(){
-    body.classList.remove("flex-col")
-    fundo.classList.remove("w-full")
-    fundo.classList.remove("h-[538px]")
+    // body.classList.remove("flex-col")
+    // fundo.classList.remove("w-full")
+    fundo.classList.remove("h-[308px]")
     fundo.classList.add("w-[536px]")
     fundo.classList.add("h-full")
     testando.style.width = "308px";
     alert('mudei a width, agora 1+2 é 3 ela é'+testando.width)
     button.style.visibility = "hidden";
+    testando.rotate(45 * Math.PI / 180);
 }
 
 function direcionarCamera(){
