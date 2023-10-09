@@ -14,7 +14,7 @@ if (indice==72){
 }
 
 function giraGira(){
-    body.classList.remove("flex-col")
+    // body.classList.remove("flex-col")
     fundo.classList.remove("w-full")
     fundo.classList.remove("h-[538px]")
     fundo.classList.add("w-[536px]")
