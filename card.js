@@ -3,6 +3,7 @@ let title = document.querySelector("#title");
 let indice = localStorage.getItem('indice');
 let body = document.querySelector("#body")
 let fundo = document.querySelector("#fundo")
+let testando = document.querySelector("#ohMyGod")
 
 alert(indice);
 
@@ -17,6 +18,7 @@ function giraGira(){
     fundo.classList.remove("h-[538px]")
     fundo.classList.add("w-[536px]")
     fundo.classList.add("h-full")
+    testando.style.width = "308px"
 }
 
 function direcionarCamera(){
