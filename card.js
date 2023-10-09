@@ -1,12 +1,22 @@
 let text = document.querySelector("#text");
 let title = document.querySelector("#title");
 let indice = localStorage.getItem('indice');
+let body = document.querySelector("#body")
+let fundo = document.querySelector("#fundo")
 
 alert(indice);
 
 if (indice==72){
     text.innerText = "Sou a imagem 72, represento uma valvula por cima"
     title.innerText = "Válvula"
+}
+
+function giraGira(){
+    body.classList.remove("flex-col")
+    fundo.classList.remove("w-full")
+    fundo.classList.remove("h-[538px]")
+    fundo.classList.add("w-[536px]")
+    fundo.classList.add("h-full")
 }
 
 function direcionarCamera(){
