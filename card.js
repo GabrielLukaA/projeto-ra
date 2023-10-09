@@ -19,10 +19,10 @@ function giraGira(){
     fundo.classList.remove("h-[308px]")
     fundo.classList.add("w-[536px]")
     fundo.classList.add("h-full")
-    testando.style.width = "308px";
-    alert('mudei a width, agora 1111+2 é 3 ela é'+testando.width)
+    // testando.style.width = "308px";
+    alert('mudei a width, agora 2180921389012908 ela é'+testando.width)
     button.style.visibility = "hidden";
-    testando.rotate(45 * Math.PI / 180);
+    testando.classList.add("rotate-90")
 }
 
 function direcionarCamera(){
