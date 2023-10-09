@@ -14,13 +14,13 @@ if (indice==72){
 }
 
 function giraGira(){
-    // body.classList.remove("flex-col")
+    body.classList.remove("flex-col")
     fundo.classList.remove("w-full")
     fundo.classList.remove("h-[538px]")
     fundo.classList.add("w-[536px]")
     fundo.classList.add("h-full")
     testando.style.width = "308px";
-    alert('mudei a width, agora ela é'+testando.width+ "mudei")
+    alert('mudei a width, agora sdasdasdasd ela é'+testando.width)
     button.style.visibility = "hidden";
 }
 
