@@ -18,10 +18,10 @@ function giraGira(){
     // fundo.classList.remove("w-full")
     fundo.classList.remove("h-[308px]")
     testando.style.height = "600px"
-    testando.style.width = "600px"
+    testando.classList.add('w-full')
     fundo.classList.add("h-full")
     // testando.style.width = "308px";
-    alert('mudei a width, agora cristo ela é'+testando.width)
+    alert('mudei a width,  ela é'+testando.width)
     testando.classList.add("rotate-90")
 }
 
