@@ -20,7 +20,7 @@ function giraGira(){
     fundo.classList.add("w-[536px]")
     fundo.classList.add("h-full")
     testando.style.width = "308px";
-    alert('mudei a width, agora ela é'+testando.width)
+    alert('mudei a width, agora ela é'+testando.width+ "mudei")
     button.style.visibility = "hidden";
 }
 
