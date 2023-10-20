@@ -8,6 +8,33 @@ let button = document.querySelector("#oi")
 
 alert(indice);
 
+switch(indice){
+    //motor
+    // 34, 22, 52, 59, 41
+    case 34, 22, 52, 59, 41: {
+        text.innerText = "Sou a imagem 72, represento uma valvula por cima"
+        title.innerText = "Motor"
+    }
+    //painel controle
+    // 49, 49(2), 57, 17
+    case 49, 57, 17 : {
+        text.innerText = ""
+        title.innerText = "Painel de controle"
+    }
+    //maquina de frente
+    // 18, 33
+    case 18, 33 : {
+        text.innerText = ""
+        title.innerText = "Maquina de frente"
+    }
+    //garra de insercao
+    // 19, 50
+    case 19, 50 : {
+
+    }
+
+}
+
 if (indice==72){
     text.innerText = "Sou a imagem 72, represento uma valvula por cima"
     title.innerText = "Válvula"
@@ -30,16 +57,6 @@ function direcionarCamera(){
 }
 
 // alert(text.innerText)
-
-
-//maquina de frente
-// 18, 33
-
-//painel controle
-// 49, 49(2), 57, 17
-
-//garra de insercao
-// 19, 50
 
 //prendedor(?)/ trava seguranca
 // 51, 51(2)
@@ -67,9 +84,6 @@ function direcionarCamera(){
 
 //maquina por tras
 // 9
-
-//motor
-// 34, 22, 52, 59, 41
 
 //sensor f7/visao superior
 // 10, 28
