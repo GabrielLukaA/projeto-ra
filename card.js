@@ -16,33 +16,37 @@ switch(indice){
         alert("entrei pois sou a 41 yay")
         text.innerText = "Sou a imagem 72, represento uma valvula por cima"
         title.innerText = "Motor"
+        break
     //painel controle
     // 49, 49(2), 57, 17
     case 49, 57, 17 : {
         text.innerText = ""
         title.innerText = "Painel de controle"
+        break
     }
     //maquina de frente
     // 18, 33
     case 18, 33 : {
         text.innerText = ""
         title.innerText = "Maquina de frente"
+        break
     }
     //garra de insercao
     // 19, 50
     case 19, 50 : {
-
+        break
     }
     default:{
         alert("Entrei switch!")
+        break;
     }
 
 }
 
-if (indice==72){
-    text.innerText = "Uma insertadora de bobinas é uma máquina especializada utilizada na indústria de impressão e encadernação. Ela desempenha um papel crucial no processo de produção, especialmente quando se trata de livros, revistas e outros materiais impressos em grande escala. Esta máquina automatizada é projetada para inserir bobinas de forma precisa e eficiente nos materiais, criando assim um acabamento de alta qualidade.."
-    title.innerText = "Válvula"
-}
+// if (indice==72){
+//     text.innerText = "Uma insertadora de bobinas é uma máquina especializada utilizada na indústria de impressão e encadernação. Ela desempenha um papel crucial no processo de produção, especialmente quando se trata de livros, revistas e outros materiais impressos em grande escala. Esta máquina automatizada é projetada para inserir bobinas de forma precisa e eficiente nos materiais, criando assim um acabamento de alta qualidade.."
+//     title.innerText = "Válvula"
+// }
 
 function giraGira(){
     // body.classList.remove("flex-col")
