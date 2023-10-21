@@ -33,6 +33,9 @@ switch(indice){
     case 19, 50 : {
 
     }
+    default:{
+        alert("Entrei switch!")
+    }
 
 }
 
