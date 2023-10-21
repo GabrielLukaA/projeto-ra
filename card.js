@@ -1,5 +1,6 @@
 let text = document.querySelector("#text");
 let title = document.querySelector("#title");
+
 let indice = localStorage.getItem('indice');
 let body = document.querySelector("#body")
 let fundo = document.querySelector("#fundo")
@@ -36,7 +37,7 @@ switch(indice){
 }
 
 if (indice==72){
-    text.innerText = "Sou a imagem 72, represento uma valvula por cima"
+    text.innerText = "Uma insertadora de bobinas é uma máquina especializada utilizada na indústria de impressão e encadernação. Ela desempenha um papel crucial no processo de produção, especialmente quando se trata de livros, revistas e outros materiais impressos em grande escala. Esta máquina automatizada é projetada para inserir bobinas de forma precisa e eficiente nos materiais, criando assim um acabamento de alta qualidade.."
     title.innerText = "Válvula"
 }
 
