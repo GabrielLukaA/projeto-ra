@@ -19,27 +19,27 @@ switch(indice){
         break;
     //painel controle
     // 49, 49(2), 57, 17
-    case 49, 57, 17 : {
+    case 49, 57, 17 : 
         text.innerText = ""
         title.innerText = "Painel de controle"
         break;
-    }
+    
     //maquina de frente
     // 18, 33
-    case 18, 33 : {
+    case 18, 33 : 
         text.innerText = ""
         title.innerText = "Maquina de frente"
         break;
-    }
+    
     //garra de insercao
     // 19, 50
-    case 19, 50 : {
+    case 19, 50 : 
         break;
-    }
-    default:{
+    
+    default:
         alert("Entrei switch2!")
         break;
-    }
+
 
 }
 
