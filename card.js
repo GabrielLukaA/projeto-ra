@@ -1,7 +1,7 @@
 let text = document.querySelector("#text");
 let title = document.querySelector("#title");
 
-let indice = localStorage.getItem('indice');
+let indice = JSON.parse(localStorage.getItem('indice'));
 let body = document.querySelector("#body")
 let fundo = document.querySelector("#fundo")
 let testando = document.querySelector("#ohMyGod")
