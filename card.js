@@ -16,25 +16,25 @@ switch(indice){
         alert("entrei pois sou a 41 yay")
         text.innerText = "Sou a imagem 72, represento uma valvula por cima"
         title.innerText = "Motor"
-        break
+        break;
     //painel controle
     // 49, 49(2), 57, 17
     case 49, 57, 17 : {
         text.innerText = ""
         title.innerText = "Painel de controle"
-        break
+        break;
     }
     //maquina de frente
     // 18, 33
     case 18, 33 : {
         text.innerText = ""
         title.innerText = "Maquina de frente"
-        break
+        break;
     }
     //garra de insercao
     // 19, 50
     case 19, 50 : {
-        break
+        break;
     }
     default:{
         alert("Entrei switch2!")
