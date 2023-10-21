@@ -12,7 +12,7 @@ alert(indice);
 switch(indice){
     //motor
     // 34, 22, 52, 59, 41
-    case 34, 22, 52, 59, 41 : 
+    case 41 : 
         alert("entrei pois sou a 41 yay")
         text.innerText = "Sou a imagem 72, represento uma valvula por cima"
         title.innerText = "Motor"
