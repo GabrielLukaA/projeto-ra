@@ -37,7 +37,7 @@ switch(indice){
         break
     }
     default:{
-        alert("Entrei switch!")
+        alert("Entrei switch2!")
         break;
     }
 
