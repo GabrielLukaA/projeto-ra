@@ -49,6 +49,11 @@ if( [34, 22, 52, 59, 41].includes(indice)){
     title.innerText = "Válvula"
 }
 
+if(indice == 41){
+    text.innerText = " testes"
+    title.innerText = "teste"
+}
+
 if (indice==72){
     text.innerText = "Uma insertadora de bobinas é uma máquina especializada utilizada na indústria de impressão e encadernação. Ela desempenha um papel crucial no processo de produção, especialmente quando se trata de livros, revistas e outros materiais impressos em grande escala. Esta máquina automatizada é projetada para inserir bobinas de forma precisa e eficiente nos materiais, criando assim um acabamento de alta qualidade.."
     title.innerText = "Válvula"
