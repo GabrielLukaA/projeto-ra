@@ -8,7 +8,7 @@ let testando = document.querySelector("#ohMyGod")
 let button = document.querySelector("#oi")
 
 alert(indice);
-
+alert(indice == 15 || indice == 41)
 switch (indice) {
     //motor
     // 34, 22, 52, 59, 41
