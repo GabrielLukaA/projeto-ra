@@ -9,82 +9,112 @@ let button = document.querySelector("#oi")
 
 alert(indice);
 
-switch(indice){
+switch (indice) {
     //motor
     // 34, 22, 52, 59, 41
-    case 34, 22, 52, 59, 41 : 
+    case 34, 22, 52, 59, 41:
+        alert("uhuuuuuu")
         text.innerText = ""
         title.innerText = "Motor"
         break;
     //cobre
     // 15
-    case 15 :
+    case 15:
         text.innerText = ""
         title.innerText = "Rolos de Cobre"
         break;
     //protecao/parte de cima da garra de insercao
     // 5
-    case 5 :
+    case 5:
         text.innerText = ""
         title.innerText = "Proteção Acima da Cabeça de Inserção"
         break;
     //sensor f1
     //20
-    case 20 :
+    case 20:
         text.innerText = ""
         title.innerText = "Sensor F1"
         break;
     //sensor f2
     // 4
-    case 4 :
+    case 4:
         text.innerText = ""
         title.innerText = "Sensor F2"
         break;
-    //
-    //
-    case :
-        text.innerText = ""
-        title.innerText = ""
-        break;
-    //
-    //
-    case :
-        text.innerText = ""
-        title.innerText = ""
-        break;
     //painel controle
     // 49, 49(2), 57, 17
-    case 49, 57, 17 : 
+    case 49, 57, 17:
         text.innerText = ""
         title.innerText = "Painel de controle"
         break;
     //maquina de frente
     // 18, 33
-    case 18, 33 : 
+    case 18, 33:
         text.innerText = ""
         title.innerText = "Maquina de frente"
         break;
-    
+
     //garra de insercao 
     // 19, 50
-    case 19, 50 : 
+    case 19, 50:
         text.innerText = " Esta é a parte principal da máquina que insere as bobinas de fio no estator. " +
-        "Geralmente, essa cabeça tem componentes mecânicos, como dedos ou agulhas, " + 
-        "que posicionam as bobinas com precisão nas ranhuras do estator.";
-        
+            "Geralmente, essa cabeça tem componentes mecânicos, como dedos ou agulhas, " +
+            "que posicionam as bobinas com precisão nas ranhuras do estator.";
         title.innerText = "Cabeça de Inserção de Bobina (Coil Insertion Head)"
         break;
     //visao interior (colocadora de fita)
     //39, 43, 44, 30, 45
-    case 39, 43, 44, 30, 45 :
+    case 39, 43, 44, 30, 45:
         text.innerText = ""
         title.innerText = "Visão interior (colocadora de fita)"
         break;
     //filtro hidraulico
     // 72, 13
-    case 72, 13 :
+    case 72, 13:
         text.innerText = ""
         title.innerText = "Filtro Hidráulico"
+        break;
+    //perigo alta tesão
+    // 3
+    case 3:
+        text.innerText = ""
+        title.innerText = "Alerta de Alta Tesão"
+        break;
+    //maquina por tras
+    // 9
+    case 9:
+        text.innerText = ""
+        title.innerText = "Visão Traseira da Máquina"
+        break;
+    //visao superior
+    // 35, 27, 29
+    case 35, 27, 29 :
+        text.innerText = ""
+        title.innerText = "Visão Superior da Máquina"
+        break;
+    //
+    //
+    case :
+        text.innerText = ""
+        title.innerText = ""
+        break;
+    //
+    //
+    case :
+        text.innerText = ""
+        title.innerText = ""
+        break;
+    //
+    //
+    case :
+        text.innerText = ""
+        title.innerText = ""
+        break;
+    //
+    //
+    case :
+        text.innerText = ""
+        title.innerText = ""
         break;
     default:
         alert("Entrei switch2!")
@@ -99,7 +129,7 @@ switch(indice){
 //     title.innerText = "Válvula"
 // }
 
-function giraGira(){
+function giraGira() {
     // body.classList.remove("flex-col")
     // fundo.classList.remove("w-full")
     fundo.classList.remove("h-[308px]")
@@ -107,11 +137,11 @@ function giraGira(){
     testando.classList.add('w-full')
     fundo.classList.add("h-full")
     // testando.style.width = "308px";
-    alert('mudei a width,  ela é'+testando.width)
+    alert('mudei a width,  ela é' + testando.width)
     testando.classList.add("rotate-90")
 }
 
-function direcionarCamera(){
+function direcionarCamera() {
     window.location.href = 'camera.html';
 }
 
@@ -123,29 +153,16 @@ function direcionarCamera(){
 //prendedor(?)/ trava seguranca (lado do painel)
 // 1, 1(2), 69, 12
 
-//perigo alta tesão
-// 3
-
-
-
-
-
-
-
 //visao lateral (esquerda) (colocadora de fitas)
 // 6, 6(2), 70, 38, 46(escrita/especificacoes), 32
 
 //valvula e cabos/motores(?)
 // 8, 24, 14, 42
 
-//maquina por tras
-// 9
+
 
 //sensor f7/visao superior
 // 10, 28
-
-//visao superior
-// 35, 27, 29
 
 //visao lateral (direita)/alta tensao
 // 11, 21
@@ -163,7 +180,7 @@ function direcionarCamera(){
 //71, 25
 
 //suporte (visao superior)
-//40, 60, 16, 66    
+//40, 60, 16, 66
 
 //insertadora
 //53
