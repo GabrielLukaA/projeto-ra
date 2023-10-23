@@ -28,6 +28,7 @@ alert(indice);
 switch (indice) {
     //motor //cabo motor
     // 34, 22, 52, 59, 41, 71, 25
+    case  41:
     case 34, 22, 52, 59, 41, 71, 25:
         alert("uhuuuuuu")
         text.innerText = "O motor é usado para acionar o sistema hidráulico. Ele gera energia mecânica para operar " +
