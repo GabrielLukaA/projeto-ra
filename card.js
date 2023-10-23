@@ -1,14 +1,30 @@
 let text = document.querySelector("#text");
 let title = document.querySelector("#title");
-
 let indice = JSON.parse(localStorage.getItem('indice'));
+
 let body = document.querySelector("#body")
 let fundo = document.querySelector("#fundo")
 let testando = document.querySelector("#ohMyGod")
 let button = document.querySelector("#oi")
 
+function giraGira() {
+    // body.classList.remove("flex-col")
+    // fundo.classList.remove("w-full")
+    fundo.classList.remove("h-[308px]")
+    testando.style.height = "600px"
+    testando.classList.add('w-full')
+    fundo.classList.add("h-full")
+    // testando.style.width = "308px";
+    alert('mudei a width,  ela é' + testando.width)
+    testando.classList.add("rotate-90")
+}
+
+function direcionarCamera() {
+    window.location.href = 'camera.html';
+}
+
 alert(indice);
-alert(indice == 15 || indice == 41)
+
 switch (indice) {
     //motor
     // 34, 22, 52, 59, 41
@@ -44,7 +60,8 @@ switch (indice) {
     //painel controle
     // 49, 49(2), 57, 17
     case 49, 57, 17:
-        text.innerText = ""
+        text.innerText = "Permite aos operadores configurar e controlar parâmetros da máquina, " + 
+        "como a velocidade de inserção, o comprimento do fio e outras configurações."
         title.innerText = "Painel de controle"
         break;
     //maquina de frente
@@ -88,33 +105,51 @@ switch (indice) {
         break;
     //visao superior
     // 35, 27, 29
-    case 35, 27, 29 :
+    case 35, 27, 29:
         text.innerText = ""
         title.innerText = "Visão Superior da Máquina"
         break;
-    //
-    //
-    case :
+    //placa fundadores
+    //65
+    case 65:
         text.innerText = ""
-        title.innerText = ""
+        title.innerText = "Placa com o Nome dos Criadores"
         break;
-    //
-    //
-    case :
+    //insertadora
+    //53
+    case 53:
         text.innerText = ""
-        title.innerText = ""
+        title.innerText = "Insertadora"
         break;
-    //
-    //
-    case :
+    //bobinas
+    //0, 64
+    case 0, 64:
         text.innerText = ""
-        title.innerText = ""
+        title.innerText = "Bobinas"
         break;
-    //
-    //
-    case :
+    //placa motor
+    //58
+    case 58:
         text.innerText = ""
-        title.innerText = ""
+        title.innerText = "Placa do Motor"
+        break;
+    //rosca da insertadora
+    //54, 55
+    case 54, 55:
+        text.innerText = ""
+        title.innerText = "Rosca da Insertadora"
+        break;
+    //painel detector de falha de isolacao
+    // 56
+    case 56:
+        text.innerText = ""
+        title.innerText = "Painel Detector de Falha de Isolação"
+        break;
+    //conjunto painel controle/detector falha
+    //61
+    case 61:
+        text.innerText = ""
+        title.innerText = "Painel de Controle e Detector de Falha"
         break;
     default:
         alert("Entrei switch2!")
@@ -122,30 +157,6 @@ switch (indice) {
 
 
 }
-
-//     // 34, 22, 52, 59, 41
-// if( [34, 22, 52, 59, 41].includes(indice)){
-//     text.innerText = "Uma insertadora de bobinas é uma máquina especializada utilizada na indústria de impressão e encadernação. Ela desempenha um papel crucial no processo de produção, especialmente quando se trata de livros, revistas e outros materiais impressos em grande escala. Esta máquina automatizada é projetada para inserir bobinas de forma precisa e eficiente nos materiais, criando assim um acabamento de alta qualidade.."
-//     title.innerText = "Válvula"
-// }
-
-function giraGira() {
-    // body.classList.remove("flex-col")
-    // fundo.classList.remove("w-full")
-    fundo.classList.remove("h-[308px]")
-    testando.style.height = "600px"
-    testando.classList.add('w-full')
-    fundo.classList.add("h-full")
-    // testando.style.width = "308px";
-    alert('mudei a width,  ela é' + testando.width)
-    testando.classList.add("rotate-90")
-}
-
-function direcionarCamera() {
-    window.location.href = 'camera.html';
-}
-
-// alert(text.innerText)
 
 //prendedor(?)/ trava seguranca
 // 51, 51(2)
@@ -158,8 +169,6 @@ function direcionarCamera() {
 
 //valvula e cabos/motores(?)
 // 8, 24, 14, 42
-
-
 
 //sensor f7/visao superior
 // 10, 28
@@ -182,23 +191,8 @@ function direcionarCamera() {
 //suporte (visao superior)
 //40, 60, 16, 66
 
-//insertadora
-//53
-
-//rosca da insertadora
-//54, 55
-
-//painel detector de falha de isolacao
-// 56
-
 //fita
 //26, 31
-
-//placa motor
-//58
-
-//conjunto painel controle/detector falha
-//61
 
 //conjunto lateral esquerda
 // 47
@@ -208,12 +202,6 @@ function direcionarCamera() {
 
 //visao frontal (com insertadora)
 //63
-
-//bobinas
-//0, 64
-
-//placa fundadores
-//65
 
 //conjunto lateral esquerda
 // 48
