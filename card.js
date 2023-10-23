@@ -92,30 +92,30 @@ switch (indice) {
         text.innerText = ""
         title.innerText = "Visão Superior da Máquina"
         break;
-    // //
-    // //
-    // case :
-    //     text.innerText = ""
-    //     title.innerText = ""
-    //     break;
-    // //
-    // //
-    // case :
-    //     text.innerText = ""
-    //     title.innerText = ""
-    //     break;
-    // //
-    // //
-    // case :
-    //     text.innerText = ""
-    //     title.innerText = ""
-    //     break;
-    // //
-    // //
-    // case :
-    //     text.innerText = ""
-    //     title.innerText = ""
-    //     break;
+    //
+    //
+    case :
+        text.innerText = ""
+        title.innerText = ""
+        break;
+    //
+    //
+    case :
+        text.innerText = ""
+        title.innerText = ""
+        break;
+    //
+    //
+    case :
+        text.innerText = ""
+        title.innerText = ""
+        break;
+    //
+    //
+    case :
+        text.innerText = ""
+        title.innerText = ""
+        break;
     default:
         alert("Entrei switch2!")
         break;
