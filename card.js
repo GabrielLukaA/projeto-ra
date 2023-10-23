@@ -12,10 +12,45 @@ alert(indice);
 switch(indice){
     //motor
     // 34, 22, 52, 59, 41
-    case 41 : 
-        alert("entrei pois sou a 41 yay")
-        text.innerText = "Sou a imagem 72, represento uma valvula por cima"
+    case 34, 22, 52, 59, 41 : 
+        text.innerText = ""
         title.innerText = "Motor"
+        break;
+    //cobre
+    // 15
+    case 15 :
+        text.innerText = ""
+        title.innerText = "Rolos de Cobre"
+        break;
+    //protecao/parte de cima da garra de insercao
+    // 5
+    case 5 :
+        text.innerText = ""
+        title.innerText = "Proteção Acima da Cabeça de Inserção"
+        break;
+    //sensor f1
+    //20
+    case 20 :
+        text.innerText = ""
+        title.innerText = "Sensor F1"
+        break;
+    //sensor f2
+    // 4
+    case 4 :
+        text.innerText = ""
+        title.innerText = "Sensor F2"
+        break;
+    //
+    //
+    case :
+        text.innerText = ""
+        title.innerText = ""
+        break;
+    //
+    //
+    case :
+        text.innerText = ""
+        title.innerText = ""
         break;
     //painel controle
     // 49, 49(2), 57, 17
@@ -23,7 +58,6 @@ switch(indice){
         text.innerText = ""
         title.innerText = "Painel de controle"
         break;
-    
     //maquina de frente
     // 18, 33
     case 18, 33 : 
@@ -31,11 +65,27 @@ switch(indice){
         title.innerText = "Maquina de frente"
         break;
     
-    //garra de insercao
+    //garra de insercao 
     // 19, 50
     case 19, 50 : 
+        text.innerText = " Esta é a parte principal da máquina que insere as bobinas de fio no estator. " +
+        "Geralmente, essa cabeça tem componentes mecânicos, como dedos ou agulhas, " + 
+        "que posicionam as bobinas com precisão nas ranhuras do estator.";
+        
+        title.innerText = "Cabeça de Inserção de Bobina (Coil Insertion Head)"
         break;
-    
+    //visao interior (colocadora de fita)
+    //39, 43, 44, 30, 45
+    case 39, 43, 44, 30, 45 :
+        text.innerText = ""
+        title.innerText = "Visão interior (colocadora de fita)"
+        break;
+    //filtro hidraulico
+    // 72, 13
+    case 72, 13 :
+        text.innerText = ""
+        title.innerText = "Filtro Hidráulico"
+        break;
     default:
         alert("Entrei switch2!")
         break;
@@ -43,21 +93,11 @@ switch(indice){
 
 }
 
-    // 34, 22, 52, 59, 41
-if( [34, 22, 52, 59, 41].includes(indice)){
-    text.innerText = "Uma insertadora de bobinas é uma máquina especializada utilizada na indústria de impressão e encadernação. Ela desempenha um papel crucial no processo de produção, especialmente quando se trata de livros, revistas e outros materiais impressos em grande escala. Esta máquina automatizada é projetada para inserir bobinas de forma precisa e eficiente nos materiais, criando assim um acabamento de alta qualidade.."
-    title.innerText = "Válvula"
-}
-
-if(indice == 41){
-    text.innerText = " testes"
-    title.innerText = "teste"
-}
-
-if (indice==72){
-    text.innerText = "Uma insertadora de bobinas é uma máquina especializada utilizada na indústria de impressão e encadernação. Ela desempenha um papel crucial no processo de produção, especialmente quando se trata de livros, revistas e outros materiais impressos em grande escala. Esta máquina automatizada é projetada para inserir bobinas de forma precisa e eficiente nos materiais, criando assim um acabamento de alta qualidade.."
-    title.innerText = "Válvula"
-}
+//     // 34, 22, 52, 59, 41
+// if( [34, 22, 52, 59, 41].includes(indice)){
+//     text.innerText = "Uma insertadora de bobinas é uma máquina especializada utilizada na indústria de impressão e encadernação. Ela desempenha um papel crucial no processo de produção, especialmente quando se trata de livros, revistas e outros materiais impressos em grande escala. Esta máquina automatizada é projetada para inserir bobinas de forma precisa e eficiente nos materiais, criando assim um acabamento de alta qualidade.."
+//     title.innerText = "Válvula"
+// }
 
 function giraGira(){
     // body.classList.remove("flex-col")
@@ -86,14 +126,11 @@ function direcionarCamera(){
 //perigo alta tesão
 // 3
 
-//sensor f1
-//20
 
-//sensor f2
-// 4
 
-//protecao/parte de cima da garra de insercao
-// 5
+
+
+
 
 //visao lateral (esquerda) (colocadora de fitas)
 // 6, 6(2), 70, 38, 46(escrita/especificacoes), 32
@@ -122,14 +159,8 @@ function direcionarCamera(){
 //prendedor(diferente)
 //37
 
-//visao interior (colocadora de fita)
-//39, 43, 44, 30, 45
-
 //cabo motor
 //71, 25
-
-//filtro hidraulico
-// 72, 13
 
 //suporte (visao superior)
 //40, 60, 16, 66    
@@ -163,9 +194,6 @@ function direcionarCamera(){
 
 //bobinas
 //0, 64
-
-//cobre
-// 15
 
 //placa fundadores
 //65
