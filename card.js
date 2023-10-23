@@ -28,8 +28,13 @@ alert(indice);
 switch (indice) {
     //motor //cabo motor
     // 34, 22, 52, 59, 41, 71, 25
-    case  41:
-    case 34, 22, 52, 59, 41, 71, 25:
+    case 34:
+    case 22:
+    case 52:
+    case 59:
+    case 41:
+    case 71:
+    case 25:
         alert("uhuuuuuu")
         text.innerText = "O motor é usado para acionar o sistema hidráulico. Ele gera energia mecânica para operar " +
             "a bomba hidráulica, que pressuriza o fluido hidráulico. Esse fluido é então usado para controlar os movimentos " +
@@ -51,28 +56,37 @@ switch (indice) {
         break;
     //sensor f1, sensor f7/visao superior, sensor f2, sensor braco direito
     //20, 10, 28, 36
-    case 20, 10, 28, 4, 36:
+    case 20:
+    case 10:
+    case 28:
+    case 4:
+    case 36:
         text.innerText = "Sensores de segurança, como barreiras de luz ou interruptores de emergência," +
             "são usados para garantir a segurança dos operadores durante a operação da máquina."
         title.innerText = "Sensor(es) de Segurança (Safety Sensors)"
         break;
     //painel controle
     // 49, 49(2), 57, 17
-    case 49, 57, 17:
+    case 49:
+    case 57:
+    case 17:
         text.innerText = "Permite aos operadores configurar e controlar parâmetros da máquina, " +
             "como a velocidade de inserção, o comprimento do fio e outras configurações."
         title.innerText = "Painel de controle"
         break;
     //maquina de frente
     // 18, 33
-    case 18, 33:
+    case 18:
+    case 33:
         text.innerText = ""
         title.innerText = "Maquina de frente"
         break;
 
     //garra de insercao / visao frontal (com insertadora)
     // 19, 50, 63
-    case 19, 50, 63:
+    case 19:
+    case 50:
+    case 63:
         text.innerText = " Esta é a parte principal da máquina que insere as bobinas de fio no estator. " +
             "Geralmente, essa cabeça tem componentes mecânicos, como dedos ou agulhas, " +
             "que posicionam as bobinas com precisão nas ranhuras do estator.";
@@ -80,13 +94,18 @@ switch (indice) {
         break;
     //visao interior (colocadora de fita)
     //39, 43, 44, 30, 45
-    case 39, 43, 44, 30, 45:
+    case 39:
+    case 43:
+    case 44:
+    case 30:
+    case 45:
         text.innerText = ""
         title.innerText = "Visão interior (colocadora de fita)"
         break;
     //filtro hidraulico
     // 72, 13
-    case 72, 13:
+    case 72:
+    case 13:
         text.innerText = "O filtro hidráulico é um componente importante para manter a qualidade do fluido hidráulico. " +
             "Ele retira partículas e impurezas do fluido, garantindo que o sistema funcione de maneira eficiente e " +
             "evitando danos aos componentes hidráulicos."
@@ -108,7 +127,9 @@ switch (indice) {
         break;
     //visao superior
     // 35, 27, 29
-    case 35, 27, 29:
+    case 35:
+    case 27:
+    case 29:
         text.innerText = ""
         title.innerText = "Visão Superior da Máquina"
         break;
@@ -127,7 +148,8 @@ switch (indice) {
         break;
     //bobinas
     //0, 64
-    case 0, 64:
+    case 0:
+    case 64:
         text.innerText = "Bobinas são componentes elétricos fundamentais, compostos por fios enrolados em torno de um núcleo. " +
             "Na Insertadeira de bobinas, o processo envolve a montagem precisa das bobinas no estator de um motor elétrico. Isso " +
             "inclui o fornecimento do fio condutor, o enrolamento das bobinas de forma espiralada e sua fixação na posição correta, " +
@@ -136,7 +158,11 @@ switch (indice) {
         break;
     //prendedor(?)/ trava seguranca //prendedor(diferente)
     // 1, 1(2), 69, 12, 51, 51(2), 37
-    case 1, 69, 12, 51, 37:
+    case 1:
+    case 69:
+    case 12:
+    case 51:
+    case 37:
         text.innerText = "As travas de segurança têm a função primordial de garantir a segurança do operador, bem como " +
             "a precisão na montagem. Elas fixam a bobina no cabeçote de inserção, assegurando a precisão na posição de montagem " +
             "e a integridade do processo. Normalmente, são controladas automaticamente pela máquina, desbloqueando apenas quando a " +
@@ -145,13 +171,17 @@ switch (indice) {
         break;
     //fita
     //26, 31
-    case 26, 31:
+    case 26:
+    case 31:
         text.innerText = ""
         title.innerText = "Fita"
         break;
     //valvula e cabos/motores(?)
     // 8, 24, 14, 42
-    case 8, 24, 14, 42:
+    case 8:
+    case 24:
+    case 14:
+    case 42:
         text.innerText = " As válvulas hidráulicas são usadas para controlar o fluxo do fluido e, consequentemente, " +
             "os movimentos das partes da máquina. Elas podem direcionar o fluido para diferentes atuadores, controlar a pressão " +
             "e a direção do movimento, e ajustar a velocidade das operações."
@@ -159,7 +189,11 @@ switch (indice) {
         break;
     //suporte (visao superior) / suporte (motor/valvula) (lateral)
     //40, 60, 16, 66, 23
-    case 40, 60, 16, 66, 23:
+    case 40:
+    case 60:
+    case 16:
+    case 66:
+    case 23:
         text.innerText = "Suporte sobre o qual estão as principais fontes de alimentção da máqina como " +
             "o motor, o filtro hidráulico e as válvulas, bem como medidores de pressão."
         title.innerText = "Suporte de Alimentação"
@@ -173,13 +207,18 @@ switch (indice) {
         break;
     //conjunto lateral esquerda / direita
     // 47, 48, 11, 21, 62
-    case 47, 48, 11, 21, 62:
+    case 47:
+    case 48:
+    case 11:
+    case 21:
+    case 62:
         text.innerText = ""
         title.innerText = "Conjunto da Máquina visto de Lado"
         break;
     //rosca da insertadora
     //54, 55
-    case 54, 55:
+    case 54:
+    case 55:
         text.innerText = "Rosca que auxilia a Insertadora."
         title.innerText = "Rosca da Insertadora"
         break;
