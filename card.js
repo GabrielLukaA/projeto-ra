@@ -12,11 +12,34 @@ let imgContains = document.querySelector("#imgContains");
 let imgContainer = document.querySelector("#imgContainer");
 let lista = [];
 
+
+document.getElementById('mostrarCarrossel').addEventListener('click', function() {
+  const carrossel = document.getElementById('carrossel');
+  carrossel.classList.toggle('escondido');
+
+  if (!carrossel.classList.contains('escondido')) {
+      // Exibir as imagens na lista
+      const imagens = ['imagem1.jpg', 'imagem2.jpg', 'imagem3.jpg']; // Substitua pelos URLs reais das suas imagens
+      const slider = document.getElementById('slider');
+console.log(lista)
+      lista.forEach(function(imagemURL) {
+          const slide = document.createElement('div');
+          slide.classList.add('slide');
+          const img = document.createElement('img');
+          img.src = imagemURL;
+          slide.appendChild(img);
+          slider.appendChild(slide);
+      });
+  } else {
+      // Limpar o carrossel ao ocultar
+      const slider = document.getElementById('slider');
+      slider.innerHTML = '';
+  }
+});
+
+
 function giraGira() {
-
-
-
-  imgContainer.src = lista[1]
+  imgContainer.src = lista[1];
 
 }
 
@@ -44,6 +67,13 @@ switch (indice) {
     title.innerText = "Motor";
     imgContainer.src = "/assets/targetImages/indice34.jpg";
     imgFundo.src = "/assets/targetImages/indice34.jpg";
+    lista.push("/assets/targetImages/indice34.jpg");
+    lista.push("/assets/targetImages/indice22.jpg");
+    lista.push("/assets/targetImages/indice52.jpg");
+    lista.push("/assets/targetImages/indice59.jpg");
+    lista.push("/assets/targetImages/indice41.jpg");
+    lista.push("/assets/targetImages/indice71.jpg");
+    lista.push("/assets/targetImages/indice25.jpg");
     break;
   //cobre
   // 15
@@ -54,6 +84,7 @@ switch (indice) {
     title.innerText = "Rolos de Fio de Cobre";
     imgContainer.src = "/assets/targetImages/indice15.jpg";
     imgFundo.src = "/assets/targetImages/indice15.jpg";
+    lista.push("/assets/targetImages/indice15.jpg");
     break;
   //protecao/parte de cima da garra de insercao
   // 5
@@ -63,6 +94,7 @@ switch (indice) {
     title.innerText = "Proteção Acima da Cabeça de Inserção";
     imgContainer.src = "/assets/targetImages/indice5.jpg";
     imgFundo.src = "/assets/targetImages/indice5.jpg";
+    lista.push("/assets/targetImages/indice5.jpg");
     break;
   //sensor f1, sensor f7/visao superior, sensor f2, sensor braco direito
   //20, 10, 28, 36
@@ -77,6 +109,12 @@ switch (indice) {
     title.innerText = "Sensor(es) de Segurança (Safety Sensors)";
     imgContainer.src = "/assets/targetImages/indice36.jpg";
     imgFundo.src = "/assets/targetImages/indice36.jpg";
+    lista.push("/assets/targetImages/indice20.jpg");
+    lista.push("/assets/targetImages/indice10.jpg");
+    lista.push("/assets/targetImages/indice28.jpg");
+    lista.push("/assets/targetImages/indice4.jpg");
+    lista.push("/assets/targetImages/indice36.jpg");
+
     break;
   //painel controle
   // 49, 49(2), 57, 17
@@ -89,15 +127,21 @@ switch (indice) {
     title.innerText = "Painel de controle";
     imgContainer.src = "/assets/targetImages/indice49.jpg";
     imgFundo.src = "/assets/targetImages/indice49.jpg";
+    lista.push("/assets/targetImages/indice49.jpg");
+    lista.push("/assets/targetImages/indice57.jpg");
+    lista.push("/assets/targetImages/indice17.jpg");
     break;
   //maquina de frente
   // 18, 33
   case 18:
   case 33:
-    text.innerText = "Aqui se é possível ver a máquina de frente, onde já identificamos a Cabeça de inserção de Bobina, caso deseje saber mais sobre, se aproxime e escaneie ela.";
+    text.innerText =
+      "Aqui se é possível ver a máquina de frente, onde já identificamos a Cabeça de inserção de Bobina, caso deseje saber mais sobre, se aproxime e escaneie ela.";
     title.innerText = "Maquina de frente";
     imgContainer.src = "/assets/targetImages/indice18.jpg";
     imgFundo.src = "/assets/targetImages/indice18.jpg";
+    lista.push("/assets/targetImages/indice18.jpg");
+    lista.push("/assets/targetImages/indice33.jpg");
     break;
 
   //garra de insercao / visao frontal (com insertadora)
@@ -112,6 +156,9 @@ switch (indice) {
     title.innerText = "Cabeça de Inserção de Bobina (Coil Insertion Head)";
     imgContainer.src = "/assets/targetImages/indice19.jpg";
     imgFundo.src = "/assets/targetImages/indice19.jpg";
+    lista.push("/assets/targetImages/indice19.jpg");
+    lista.push("/assets/targetImages/indice50.jpg");
+    lista.push("/assets/targetImages/indice63.jpg");
     break;
   //visao interior (colocadora de fita)
   //39, 43, 44, 30, 45
@@ -124,6 +171,12 @@ switch (indice) {
     title.innerText = "Visão interior (colocadora de fita)";
     imgContainer.src = "/assets/targetImages/indice39.jpg";
     imgFundo.src = "/assets/targetImages/indice39.jpg";
+    lista.push("/assets/targetImages/indice39.jpg");
+    lista.push("/assets/targetImages/indice43.jpg");
+    lista.push("/assets/targetImages/indice44.jpg");
+    lista.push("/assets/targetImages/indice30.jpg");
+    lista.push("/assets/targetImages/indice45.jpg");
+
     break;
   //filtro hidraulico
   // 72, 13
@@ -136,6 +189,8 @@ switch (indice) {
     title.innerText = "Filtro Hidráulico";
     imgContainer.src = "/assets/targetImages/indice13.jpg";
     imgFundo.src = "/assets/targetImages/indice13.jpg";
+    lista.push("/assets/targetImages/indice72.jpg");
+    lista.push("/assets/targetImages/indice13.jpg");
     break;
   //perigo alta tesão
   // 3
@@ -147,6 +202,7 @@ switch (indice) {
     title.innerText = "Cabine Elétrica de alta Tensão";
     imgContainer.src = "/assets/targetImages/indice3.jpg";
     imgFundo.src = "/assets/targetImages/indice3.jpg";
+    lista.push("/assets/targetImages/indice3.jpg");
     break;
   //maquina por tras
   // 9
@@ -155,6 +211,7 @@ switch (indice) {
     title.innerText = "Visão Traseira da Máquina";
     imgContainer.src = "/assets/targetImages/indice9.jpg";
     imgFundo.src = "/assets/targetImages/indice9.jpg";
+    lista.push("/assets/targetImages/indice9.jpg");
     break;
   //visao superior
   // 35, 27, 29
@@ -163,6 +220,9 @@ switch (indice) {
   case 29:
     text.innerText = "";
     title.innerText = "Visão Superior da Máquina";
+    lista.push("/assets/targetImages/indice35.jpg");
+    lista.push("/assets/targetImages/indice27.jpg");
+    lista.push("/assets/targetImages/indice29.jpg");
     break;
   //placa fundadores
   //65
@@ -172,6 +232,7 @@ switch (indice) {
     title.innerText = "Placa com o Nome dos Criadores";
     imgContainer.src = "/assets/targetImages/indice65.jpg";
     imgFundo.src = "/assets/targetImages/indice65.jpg";
+    lista.push("/assets/targetImages/indice65.jpg");
     break;
   //insertadora
   //53
@@ -182,6 +243,7 @@ switch (indice) {
     title.innerText = "Estação de Fixação do Estator (Stator Holding Station)";
     imgContainer.src = "/assets/targetImages/indice53.jpg";
     imgFundo.src = "/assets/targetImages/indice53.jpg";
+    lista.push("/assets/targetImages/indice53.jpg");
     break;
   //bobinas
   //0, 64
@@ -195,6 +257,8 @@ switch (indice) {
     title.innerText = "Bobinas";
     imgContainer.src = "/assets/targetImages/indice64.jpg";
     imgFundo.src = "/assets/targetImages/indice64.jpg";
+    lista.push("/assets/targetImages/indice0.jpg");
+    lista.push("/assets/targetImages/indice64.jpg");
     break;
   //prendedor(?)/ trava seguranca //prendedor(diferente)
   // 1, 1(2), 69, 12, 51, 51(2), 37
@@ -211,6 +275,11 @@ switch (indice) {
     title.innerText = "Trava de Segurança";
     imgContainer.src = "/assets/targetImages/indice51.jpg";
     imgFundo.src = "/assets/targetImages/indice51.jpg";
+    lista.push("/assets/targetImages/indice1.jpg");
+    lista.push("/assets/targetImages/indice69.jpg");
+    lista.push("/assets/targetImages/indice12.jpg");
+    lista.push("/assets/targetImages/indice51.jpg");
+    lista.push("/assets/targetImages/indice37.jpg");
     break;
   //fita
   //26, 31
@@ -220,6 +289,8 @@ switch (indice) {
     title.innerText = "Fita";
     imgContainer.src = "/assets/targetImages/indice31.jpg";
     imgFundo.src = "/assets/targetImages/indice31.jpg";
+    lista.push("/assets/targetImages/indice26.jpg");
+    lista.push("/assets/targetImages/indice31.jpg");
     break;
   //valvula e cabos/motores(?)
   // 8, 24, 14, 42
@@ -234,13 +305,11 @@ switch (indice) {
     title.innerText = "Válvulas e cabos de Alimentação Hidráulica";
     imgContainer.src = "/assets/targetImages/indice24.jpg";
     imgFundo.src = "/assets/targetImages/indice24.jpg";
-    lista.push("/assets/targetImages/indice15.jpg")
-    lista.push("/assets/targetImages/indice16.jpg")
-    lista.push("/assets/targetImages/indice17.jpg")
-    lista.push("/assets/targetImages/indice18.jpg")
-    lista.push("/assets/targetImages/indice19.jpg")
-    lista.push("/assets/targetImages/indice20.jpg")
-    lista.push("/assets/targetImages/indice21.jpg")
+    lista.push("/assets/targetImages/indice8.jpg");
+    lista.push("/assets/targetImages/indice24.jpg");
+    lista.push("/assets/targetImages/indice14.jpg");
+    lista.push("/assets/targetImages/indice42.jpg");
+
     break;
   //suporte (visao superior) / suporte (motor/valvula) (lateral)
   //40, 60, 16, 66, 23
@@ -255,6 +324,11 @@ switch (indice) {
     title.innerText = "Suporte de Alimentação";
     imgContainer.src = "/assets/targetImages/indice40.jpg";
     imgFundo.src = "/assets/targetImages/indice40.jpg";
+    lista.push("/assets/targetImages/indice40.jpg");
+    lista.push("/assets/targetImages/indice60.jpg");
+    lista.push("/assets/targetImages/indice16.jpg");
+    lista.push("/assets/targetImages/indice66.jpg");
+    lista.push("/assets/targetImages/indice23.jpg");
     break;
   //placa motor
   //58
@@ -275,10 +349,13 @@ switch (indice) {
   case 62:
     text.innerText = "";
     title.innerText = "Conjunto da Máquina visto de Lado";
-    imgContainer.src = "/assets/targetImages/indice34.jpg";
-    imgFundo.src = "/assets/targetImages/indice34.jpg";
     imgContainer.src = "/assets/targetImages/indice62.jpg";
     imgFundo.src = "/assets/targetImages/indice62.jpg";
+    lista.push("/assets/targetImages/indice47.jpg");
+    lista.push("/assets/targetImages/indice48.jpg");
+    lista.push("/assets/targetImages/indice11.jpg");
+    lista.push("/assets/targetImages/indice21.jpg");
+    lista.push("/assets/targetImages/indice62.jpg");
     break;
   //rosca da insertadora
   //54, 55
@@ -288,6 +365,8 @@ switch (indice) {
     title.innerText = "Rosca da Insertadora";
     imgContainer.src = "/assets/targetImages/indice54.jpg";
     imgFundo.src = "/assets/targetImages/indice54.jpg";
+    lista.push("/assets/targetImages/indice54.jpg");
+    lista.push("/assets/targetImages/indice55.jpg");
     break;
   //painel detector de falha de isolacao
   // 56
@@ -299,6 +378,7 @@ switch (indice) {
     title.innerText = "Painel Detector de Falha de Isolação";
     imgContainer.src = "/assets/targetImages/indice56.jpg";
     imgFundo.src = "/assets/targetImages/indice56.jpg";
+    lista.push("/assets/targetImages/indice56.jpg");
     break;
   //conjunto painel controle/detector falha
   //61
@@ -309,6 +389,8 @@ switch (indice) {
     title.innerText = "Painel de Controle e Detector de Falha";
     imgContainer.src = "/assets/targetImages/indice61.jpg";
     imgFundo.src = "/assets/targetImages/indice61.jpg";
+    lista.push("/assets/targetImages/indice61.jpg");
+
     break;
   default:
     alert("Não foi possível encontrar uma descrição para essa imagem!");

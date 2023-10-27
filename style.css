@@ -14,3 +14,16 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+
+.escondido {
+    display: none;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+}
