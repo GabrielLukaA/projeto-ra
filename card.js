@@ -4,19 +4,28 @@ let indice = JSON.parse(localStorage.getItem('indice'));
 
 let body = document.querySelector("#body")
 let fundo = document.querySelector("#fundo")
-let testando = document.querySelector("#ohMyGod")
+let imgFundo = document.querySelector("#imgFundo")
 let button = document.querySelector("#oi")
+let cam = document.querySelector("#cam")
+let camVirada = document.querySelector("#camVirada")
+let imgContains = document.querySelector("#imgContains")
 
 function giraGira() {
-    // body.classList.remove("flex-col")
-    // fundo.classList.remove("w-full")
-    fundo.classList.remove("h-[308px]")
-    testando.style.height = "600px"
-    testando.classList.add('w-full')
-    fundo.classList.add("h-full")
-    // testando.style.width = "308px";
-    alert('mudei a width,  ela é' + testando.width)
-    testando.classList.add("rotate-90")
+    // // body.classList.remove("flex-col")
+    // // fundo.classList.remove("w-full")
+    // fundo.classList.remove("h-[308px]")
+    // testando.style.height = "600px"
+    // testando.classList.add('w-full')
+    // fundo.classList.add("h-full")
+    // // testando.style.width = "308px";
+    // alert('mudei a width,  ela é' + testando.width)
+    // testando.classList.add("rotate-90")
+
+
+    imgFundo.src = "/assets/targetImages/indice14.jpg"
+    imgContains.classList.remove("hidden")
+    imgContains.style.visibility = "visible" 
+
 }
 
 function direcionarCamera() {
