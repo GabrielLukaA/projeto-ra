@@ -1,65 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
     tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    clifford: '#da373d',
-                }
-            }
-        }
-    }
-</script>
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
 
-<head>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
-</head>
+  </head>
 
-<!-- <body id="body" class="w-screen h-[840px] flex-col flex">
-    <img src="./assets/seta.svg" alt="" class="fixed top-6 left-6 z-50" onclick="direcionarCamera()">
-    <img id="imgFundo" src="./assets/imagemFundo.avif" alt=""  class="blur-sm  z-[-10]">
-    <div id="fundo" class="fixed z-[-1] bottom-0 w-full h-[538px] bg-[#1C78BB]"></div>
+  <body
+    id="body"
+    class="w-screen h-[840px] items-center justify-center flex bg-[#1C78BB]"
+  >
+    <img
+      src="./assets/seta.svg"
+      alt=""
+      class="fixed top-6 left-6 z-50"
+      onclick="direcionarCamera()"
+    />
+    <img
+      id="imgFundo"
+      src="./assets/imagemFundo.avif"
+      alt=""
+      class="fixed h-[333px] w-[840px] top-0 z-[-10]"
+    />
     <div
-        class="fixed top-[162px] left-[75px] right-[75px] py-8 px-6 bg-white w-[450px] h-[588px] flex justify-start shadow-lg flex-col gap-4 rounded-lg">
-        <p id="title" class="title">Insertadora de bobinas</p>
-        <p id = "text" class="paragraph">
-        </p>
-        <div id="imgContains" class="rotate-90 w-[450px] fixed top-[162px] left-[75px] right-[75px] h-[588px] flex items-center justify-center hidden overflow-hidden z-[50]">
-            <img  src="./assets/imagemFundo.avif" id="imgContainer" alt="" >
-        </div>
+      class="flex flex-col justify-center py-8 gap-4 px-6 w-[450px] h-[588px] bg-[#FCFCFC] rounded-lg shadow-lg"
+    >
+      <p id="title" class="title">Insertadora de bobinas</p>
+      <p id="text" class="paragraph text-justify"></p>
 
+      <img
+        src="./assets/imagemFundo.avif"
+        class="rounded-lg overflow-hidden"
+        height="300px"
+        id="imgContainer"
+        alt=""
+      />
+      <div class="flex gap-2 justify-end w-full" onclick="giraGira()">
+        <p class="text-md">Veja mais Imagens</p>
+        <img src="./assets/images.svg" alt="" />
+      </div>
     </div>
-    <img src="./assets/ion_camera.svg" id="camVirada" alt="" class="absolute left-5 top-1/2 rotate-90 hidden">
-    <img src="./assets/ion_camera.svg" id="cam" alt="" class="fixed bottom-5 left-[275px] right-[275px] ">
-    <script src="card.js"></script>
-</body>
-<button id="oi" onclick="giraGira()" class="absolute top-[20px]">SAHSHJKLASDHJKASDHJKASDHJK</button> -->
-
-<body id="body" class="w-screen h-[840px] items-center justify-center flex bg-[#1C78BB]">
-    <img src="./assets/seta.svg" alt="" class="fixed top-6 left-6 z-50" onclick="direcionarCamera()">
-    <img id="imgFundo" src="./assets/imagemFundo.avif" alt=""  class="blur-sm fixed h-[333px] w-[840px] top-0 z-[-10]">
-    <div class="flex flex-col justify-start py-8 px-6 w-[450px] h-[588px] bg-[#FCFCFC] rounded-lg shadow-lg">
-        <p id="title" class="title">Insertadora de bobinas</p>
-        <p id = "text" class="paragraph">
-        </p>
+    <div
+      id="imgContains"
+      class="rotate-90 w-[450px] fixed top-[127px] left-[85px] h-[588px] flex items-center justify-center hidden overflow-hidden z-[50]"
+    >
+      <img
+        src="./assets/imagemFundo.avif"
+        class="rounded-lg"
+        id="imgContainer"
+        alt=""
+      />
     </div>
-        <div id="imgContains" class="rotate-90 w-[450px] fixed top-[162px] left-[75px] right-[75px] h-[588px] flex items-center justify-center hidden overflow-hidden z-[50]">
-            <img  src="./assets/imagemFundo.avif" id="imgContainer" alt="" >
-        </div>
 
-    <img src="./assets/ion_camera.svg" id="camVirada" alt="" class="absolute left-5 top-1/2 rotate-90 hidden">
-    <img src="./assets/ion_camera.svg" id="cam" alt="" class="fixed bottom-5 left-[275px] right-[275px] ">
+    <img
+      src="./assets/ion_camera.svg"
+      id="camVirada"
+      alt=""
+      class="absolute left-5 top-1/2 rotate-90 hidden"
+    />
+    <img
+      src="./assets/ion_camera.svg"
+      id="cam"
+      alt=""
+      class="fixed bottom-5 left-[275px] right-[275px]"
+    />
     <script src="card.js"></script>
-</body>
+  </body>
 </html>
-
-
