@@ -58,6 +58,7 @@ console.log(lista)
       text.classList.remove("hidden")
       title.classList.remove("hidden")
       slider.classList.remove("rotate-90")
+      slider.innerHtml = ""
       document.querySelector("#textoVerImagens").innerText = "Veja mais Imagens"
       document.querySelector("#verMaisImagens").classList.remove("hidden")
   }
