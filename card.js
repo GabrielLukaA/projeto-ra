@@ -54,11 +54,11 @@ console.log(lista)
       document.querySelector("#verMaisImagens").classList.add("hidden")
   } else {
       // Limpar o carrossel ao ocultar
+      carrossel.classList.toggle('escondido');
       imgContainer.classList.remove("hidden")
       text.classList.remove("hidden")
       title.classList.remove("hidden")
       slider.classList.remove("rotate-90")
-      slider.innerHtml = ""
       document.querySelector("#textoVerImagens").innerText = "Veja mais Imagens"
       document.querySelector("#verMaisImagens").classList.remove("hidden")
   }
