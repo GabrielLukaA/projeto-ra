@@ -58,17 +58,20 @@ function direcionarCamera(){
 }
 alert(window.location.pathname)
 
-//Verifica se está na câmera
-if(window.location.pathname == '/camera.html'){
-  //Passa pela lista de targets adicionando o eventListener
-  targetImages.map( (target) => {
-    target.addEventListener("targetFound", event => {
-      //Passa para o localStorage o indice do target
-      alert("achei")
-      localStorage.setItem('indice', targetImages.indexOf(target))
-      window.location.href =  'card.html';
+function carregarTargets(){
+  alert("carregou")
+  //Verifica se está na câmera
+  if(window.location.pathname == '/camera.html'){
+    //Passa pela lista de targets adicionando o eventListener
+    targetImages.map( (target) => {
+      target.addEventListener("targetFound", event => {
+        //Passa para o localStorage o indice do target
+        alert("achei")
+        localStorage.setItem('indice', targetImages.indexOf(target))
+        window.location.href =  'card.html';
+      });
     });
-  });
+  }
 }
 
 /////////////////////////////////////////////////////////////////
