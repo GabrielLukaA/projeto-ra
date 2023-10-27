@@ -8,12 +8,14 @@ document.querySelectorAll("a-entity").forEach( (target) => {
 carregarTargets()
 
 function carregarTargets(){
+    alert("carreguei targets")
     //Passa pela lista de targets adicionando o eventListener
     targetImages.map( (target) => {
-      console.log("dfhgd")
+      console.log(target)
       target.addEventListener("targetFound", event => {
         //Passa para o localStorage o indice do target
         alert("achei")
+        alert(targetImages.indexOf(target))
         localStorage.setItem('indice', targetImages.indexOf(target))
         window.location.href =  'card.html';
       });
