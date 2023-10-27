@@ -56,7 +56,7 @@ function mudarTema(){
 function direcionarCamera(){
     window.location.href = 'camera.html';
 }
-alert(window.location.pathname)
+// alert(window.location.pathname)
 
 // carregarTargets()
 
