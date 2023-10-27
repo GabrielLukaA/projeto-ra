@@ -30,6 +30,7 @@
     <img
       src="./assets/seta.svg"
       alt=""
+      id="seta"
       class="fixed top-6 left-6 z-50"
       onclick="direcionarCamera()"
     />
@@ -38,17 +39,18 @@
       alt="ué"
       class="fixed h-[333px] w-[840px] top-0 z-[-10]"
     />
-    <div
+    <div id="card"
       class="flex flex-col justify-center py-8 gap-4 px-6 w-[450px] h-[588px] bg-[#FCFCFC] rounded-lg shadow-lg"
     >
 
 
     <button id="mostrarCarrossel">Mostrar Carrossel</button>
+    <img src="./assets/theme.svg" alt="" id="theme" class="fixed top-6 right-6" onclick="mudarTema()">
     <div id="carrossel" class="escondido w-full items-center flex justify-center">
         <div class="slider overflow-scroll h-4/5 w-5/6 flex items-center rounded-lg" id="slider"></div>
     </div>
-      <p id="title" class="title">Insertadora de bobinas</p>
-      <p id="text" class="paragraph text-justify"></p>
+      <p id="title" class="title text-[#121212]">Insertadora de bobinas</p>
+      <p id="text" class="paragraph text-[#121212] text-justify"></p>
 
       <img
         src="./assets/imagemFundo.avif"

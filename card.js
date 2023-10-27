@@ -11,6 +11,7 @@ let camVirada = document.querySelector("#camVirada");
 let imgContains = document.querySelector("#imgContains");
 let imgContainer = document.querySelector("#imgContainer");
 let lista = [];
+let dark = false;
 
 
 document.getElementById('mostrarCarrossel').addEventListener('click', function() {
@@ -43,6 +44,31 @@ console.log(lista)
   }
 });
 
+function mudarTema(){
+  if (!dark){
+    document.querySelector("#body").classList.add("bg-[#272727]")
+    document.querySelector("#card").classList.add("bg-[#111111]")
+    title.classList.add("text-[#fff]")
+    text.classList.add("text-[#fff]")
+    camVirada.src = "./assets/cameraDark.svg"
+    cam.src = "./assets/cameraDark.svg"
+    document.querySelector("#theme").src = "./assets/themeDark.svg"
+    document.querySelector("#seta").src = "./assets/setaDark.svg"
+    dark = true
+  } else {
+    document.querySelector("#body").classList.remove("bg-[#272727]")
+    document.querySelector("#card").classList.remove("bg-[#111111]")
+    title.classList.remove("text-[#fff]")
+    text.classList.remove("text-[#fff]")
+    camVirada.src = "./assets/ion_camera.svg"
+    cam.src = "./assets/ion_camera.svg"
+    document.querySelector("#theme").src = "./assets/theme.svg"
+    document.querySelector("#seta").src = "./assets/seta.svg"
+    dark = false
+  }
+
+  // document.querySelector("#body").classList.remove("bg-[#1C78BB]")
+}
 
 function giraGira() {
   cam.classList.add("hidden")
