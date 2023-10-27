@@ -51,6 +51,7 @@ console.log(lista)
       imgContainer.classList.add("hidden")
       text.classList.add("hidden")
       title.classList.add("hidden")
+      carrossel.classList.remove("hidden")
       document.querySelector("#textoVerImagens").innerText = "Voltar as informações"
       document.querySelector("#verMaisImagens").classList.add("hidden")
   } else {
