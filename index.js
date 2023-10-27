@@ -61,7 +61,7 @@ alert(window.location.pathname)
 carregarTargets()
 
 function carregarTargets(){
-  alert("carregou")
+  console.log("dfhgd")
   //Verifica se está na câmera
   if(window.location.pathname == '/camera.html'){
     //Passa pela lista de targets adicionando o eventListener
