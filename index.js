@@ -1,6 +1,7 @@
 //Intancia a variável como uma lista
 let targetImages = [];
 let dark = false
+console.log(432243456)
 console.log(JSON.parse(localStorage.getItem("theme")))
 if (JSON.parse(localStorage.getItem("theme")==null)){
   localStorage.setItem("theme", false)
@@ -56,6 +57,7 @@ function direcionarCamera(){
     window.location.href = 'camera.html';
 }
 alert(window.location.pathname)
+
 //Verifica se está na câmera
 if(window.location.pathname == '/camera.html'){
   //Passa pela lista de targets adicionando o eventListener
