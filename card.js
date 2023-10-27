@@ -21,15 +21,10 @@ function mostrarCarrossel() {
   if (!girado){
     // cam.classList.add("hidden")
     // camVirada.classList.remove("hidden")
-    const slider = document.querySelector("#slider");
-    slider.classList.add("rotate-90")
     document.querySelector("#centerTitle").classList.remove("hidden")
     girado = true;
   } else {
     // cam.classList.remove("hidden")
-    // camVirada.classList.add("hidden")
-    const slider = document.querySelector("#slider");
-    slider.classList.remove("rotate-90")
     document.querySelector("#centerTitle").classList.add("hidden")
     girado = false;
   }
@@ -49,16 +44,13 @@ console.log(lista)
       imgContainer.classList.add("hidden")
       text.classList.add("hidden")
       title.classList.add("hidden")
-      slider.classList.add("rotate-90")
       document.querySelector("#textoVerImagens").innerText = "Voltar as informações"
       document.querySelector("#verMaisImagens").classList.add("hidden")
   } else {
       // Limpar o carrossel ao ocultar
-      carrossel.classList.toggle('escondido');
       imgContainer.classList.remove("hidden")
       text.classList.remove("hidden")
       title.classList.remove("hidden")
-      slider.classList.remove("rotate-90")
       document.querySelector("#textoVerImagens").innerText = "Veja mais Imagens"
       document.querySelector("#verMaisImagens").classList.remove("hidden")
   }
