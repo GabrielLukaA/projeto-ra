@@ -1,5 +1,5 @@
 //Intancia a variável como uma lista
-let targetImages = [];
+// let targetImages = [];
 let dark = false
 console.log(JSON.parse(localStorage.getItem("theme")))
 if (JSON.parse(localStorage.getItem("theme")==null)){
@@ -20,9 +20,9 @@ else if (JSON.parse(localStorage.getItem("theme"))){
 
 
 //Passa para a lista cada elemento "target" da câmera
-document.querySelectorAll("a-entity").forEach( (target) => {
-  targetImages.push(target)
-})
+// document.querySelectorAll("a-entity").forEach( (target) => {
+//   targetImages.push(target)
+// })
 
 
 function mudarTema(){
@@ -58,23 +58,23 @@ function direcionarCamera(){
 }
 alert(window.location.pathname)
 
-carregarTargets()
+// carregarTargets()
 
-function carregarTargets(){
-  //Verifica se está na câmera
-  if(window.location.pathname == '/camera.html'){
-    //Passa pela lista de targets adicionando o eventListener
-    targetImages.map( (target) => {
-      console.log("dfhgd")
-      target.addEventListener("targetFound", event => {
-        //Passa para o localStorage o indice do target
-        alert("achei")
-        localStorage.setItem('indice', targetImages.indexOf(target))
-        window.location.href =  'card.html';
-      });
-    });
-  }
-}
+// function carregarTargets(){
+//   //Verifica se está na câmera
+//   if(window.location.pathname == '/camera.html'){
+//     //Passa pela lista de targets adicionando o eventListener
+//     targetImages.map( (target) => {
+//       console.log("dfhgd")
+//       target.addEventListener("targetFound", event => {
+//         //Passa para o localStorage o indice do target
+//         alert("achei")
+//         localStorage.setItem('indice', targetImages.indexOf(target))
+//         window.location.href =  'card.html';
+//       });
+//     });
+//   }
+// }
 
 /////////////////////////////////////////////////////////////////
 //OBS: Não é possivel atribuir os elementos diretamente na 
