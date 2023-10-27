@@ -31,55 +31,45 @@ if (dark==true){
 }
 
 
-// function mostrarCarrossel() {
-//   lista.push("./assets/targetImages/indice34.jpg");
-//   lista.push("./assets/targetImages/indice22.jpg");
-//   lista.push("./assets/targetImages/indice52.jpg");
-//   lista.push("./assets/targetImages/indice59.jpg");
-//   lista.push("./assets/targetImages/indice41.jpg");
-//   lista.push("./assets/targetImages/indice71.jpg");
-//   lista.push("./assets/targetImages/indice25.jpg");
-//   const carrossel = document.getElementById('carrossel');
-//   carrossel.classList.toggle('escondido');
-//   if (!girado){
-//     // cam.classList.add("hidden")
-//     // camVirada.classList.remove("hidden")
-//     document.querySelector("#centerTitle").classList.remove("hidden")
-//     girado = true;
-//   } else {
-//     // cam.classList.remove("hidden")
-//     document.querySelector("#centerTitle").classList.add("hidden")
-//     girado = false;
-//   }
+function mostrarCarrossel() {
+  const carrossel = document.getElementById('carrossel');
+  carrossel.classList.toggle('escondido');
+  if (!girado){
+    document.querySelector("#centerTitle").classList.remove("hidden")
+    girado = true;
+  } else {
+    document.querySelector("#centerTitle").classList.add("hidden")
+    girado = false;
+  }
 
-//   if (!carrossel.classList.contains('escondido')) {
-//       // Exibir as imagens na lista // Substitua pelos URLs reais das suas imagens
-//       const slider = document.getElementById('slider');
-// console.log(lista)
-//       lista.forEach(function(imagemURL) {
-//           const slide = document.createElement('div');
-//           slide.classList.add('slide');
-//           const img = document.createElement('img');
-//           img.src = imagemURL;
-//           slide.appendChild(img);
-//           slider.appendChild(slide);
-//       });
-//       imgContainer.classList.add("hidden")
-//       text.classList.add("hidden")
-//       title.classList.add("hidden")
-//       carrossel.classList.remove("hidden")
-//       document.querySelector("#textoVerImagens").innerText = "Voltar as informações"
-//       document.querySelector("#verMaisImagens").classList.add("hidden")
-//   } else {
-//       // Limpar o carrossel ao ocultar
-//       imgContainer.classList.remove("hidden")
-//       carrossel.classList.add("hidden")
-//       text.classList.remove("hidden")
-//       title.classList.remove("hidden")
-//       document.querySelector("#textoVerImagens").innerText = "Veja mais Imagens"
-//       document.querySelector("#verMaisImagens").classList.remove("hidden")
-//   }
-// };
+  if (!carrossel.classList.contains('escondido')) {
+      // Exibir as imagens na lista // Substitua pelos URLs reais das suas imagens
+      const slider = document.getElementById('slider');
+console.log(lista)
+      lista.forEach(function(imagemURL) {
+          const slide = document.createElement('div');
+          slide.classList.add('slide');
+          const img = document.createElement('img');
+          img.src = imagemURL;
+          slide.appendChild(img);
+          slider.appendChild(slide);
+      });
+      imgContainer.classList.add("hidden")
+      text.classList.add("hidden")
+      title.classList.add("hidden")
+      carrossel.classList.remove("hidden")
+      document.querySelector("#textoVerImagens").innerText = "Voltar as informações"
+      document.querySelector("#verMaisImagens").classList.add("hidden")
+  } else {
+      // Limpar o carrossel ao ocultar
+      imgContainer.classList.remove("hidden")
+      carrossel.classList.add("hidden")
+      text.classList.remove("hidden")
+      title.classList.remove("hidden")
+      document.querySelector("#textoVerImagens").innerText = "Veja mais Imagens"
+      document.querySelector("#verMaisImagens").classList.remove("hidden")
+  }
+};
 
 function mudarTema(){
   if (!dark){
