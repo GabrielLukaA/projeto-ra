@@ -1,7 +1,6 @@
 //Intancia a variável como uma lista
 let targetImages = [];
 let dark = false
-console.log(432243456)
 console.log(JSON.parse(localStorage.getItem("theme")))
 if (JSON.parse(localStorage.getItem("theme")==null)){
   localStorage.setItem("theme", false)
@@ -27,9 +26,10 @@ document.querySelectorAll("a-entity").forEach( (target) => {
 
 
 function mudarTema(){
+  let button = document.querySelector("#hideARButton")
   if (!dark){
     let fundo =  document.querySelector("#fundo")
-    fundo.classList.add("bg-[#272727]")
+  fundo.classList.add("bg-[#272727]")
     let banner = document.querySelector("#banner")
     banner.src = "./assets/bannerWeg.svg"
     let theme = document.querySelector("#theme")
