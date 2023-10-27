@@ -56,6 +56,7 @@ console.log(lista)
   } else {
       // Limpar o carrossel ao ocultar
       imgContainer.classList.remove("hidden")
+      carrossel.classList.add("hidden")
       text.classList.remove("hidden")
       title.classList.remove("hidden")
       document.querySelector("#textoVerImagens").innerText = "Veja mais Imagens"
