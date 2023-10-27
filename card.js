@@ -12,11 +12,27 @@ let imgContains = document.querySelector("#imgContains");
 let imgContainer = document.querySelector("#imgContainer");
 let lista = [];
 let dark = false;
+let girado = false;
 
 
-document.getElementById('mostrarCarrossel').addEventListener('click', function() {
+function mostrarCarrossel() {
   const carrossel = document.getElementById('carrossel');
   carrossel.classList.toggle('escondido');
+  if (!girado){
+    // cam.classList.add("hidden")
+    // camVirada.classList.remove("hidden")
+    const slider = document.querySelector("#slider");
+    slider.classList.add("rotate-90")
+    document.querySelector("#centerTitle").classList.remove("hidden")
+    girado = true;
+  } else {
+    // cam.classList.remove("hidden")
+    // camVirada.classList.add("hidden")
+    const slider = document.querySelector("#slider");
+    slider.classList.remove("rotate-90")
+    document.querySelector("#centerTitle").classList.add("hidden")
+    girado = false;
+  }
 
   if (!carrossel.classList.contains('escondido')) {
       // Exibir as imagens na lista // Substitua pelos URLs reais das suas imagens
@@ -34,26 +50,32 @@ console.log(lista)
       text.classList.add("hidden")
       title.classList.add("hidden")
       slider.classList.add("rotate-90")
+      document.querySelector("#textoVerImagens").innerText = "Voltar as informações"
+      document.querySelector("#verMaisImagens").classList.add("hidden")
   } else {
       // Limpar o carrossel ao ocultar
-      const slider = document.getElementById('slider');
-      slider.innerHTML = '';
       imgContainer.classList.remove("hidden")
       text.classList.remove("hidden")
       title.classList.remove("hidden")
+      slider.classList.remove("rotate-90")
+      document.querySelector("#textoVerImagens").innerText = "Veja mais Imagens"
+      document.querySelector("#verMaisImagens").classList.remove("hidden")
   }
-});
+};
 
 function mudarTema(){
   if (!dark){
     document.querySelector("#body").classList.add("bg-[#272727]")
     document.querySelector("#card").classList.add("bg-[#111111]")
+    document.querySelector("#textoVerImagens").classList.add("text-[#fff]")
+    document.querySelector("#verMaisImagens").src = "./assets/imagesDark.svg"
     title.classList.add("text-[#fff]")
     text.classList.add("text-[#fff]")
     camVirada.src = "./assets/cameraDark.svg"
     cam.src = "./assets/cameraDark.svg"
     document.querySelector("#theme").src = "./assets/themeDark.svg"
     document.querySelector("#seta").src = "./assets/setaDark.svg"
+    document.querySelector("#centerTitle").classList.add("text-[#fcfcfc]")
     dark = true
   } else {
     document.querySelector("#body").classList.remove("bg-[#272727]")
@@ -61,28 +83,18 @@ function mudarTema(){
     title.classList.remove("text-[#fff]")
     text.classList.remove("text-[#fff]")
     camVirada.src = "./assets/ion_camera.svg"
+    document.querySelector("#textoVerImagens").classList.remove("text-[#fff]")
     cam.src = "./assets/ion_camera.svg"
     document.querySelector("#theme").src = "./assets/theme.svg"
     document.querySelector("#seta").src = "./assets/seta.svg"
+    document.querySelector("#verMaisImagens").src = "./assets/images.svg"
+    document.querySelector("#centerTitle").classList.remove("text-[#fcfcfc]")
     dark = false
   }
 
   // document.querySelector("#body").classList.remove("bg-[#1C78BB]")
 }
 
-function giraGira() {
-  cam.classList.add("hidden")
-  camVirada.classList.remove("hidden")
-  lista.push("/assets/targetImages/indice34.jpg");
-  lista.push("/assets/targetImages/indice22.jpg");
-  lista.push("/assets/targetImages/indice52.jpg");
-  lista.push("/assets/targetImages/indice59.jpg");
-  lista.push("/assets/targetImages/indice41.jpg");
-  lista.push("/assets/targetImages/indice71.jpg");
-  lista.push("/assets/targetImages/indice25.jpg");
-  const slider = document.querySelector("#slider");
-  slider.classList.add("rotate-90")
-}
 
 function direcionarCamera() {
   window.location.href = "camera.html";

@@ -42,9 +42,7 @@
     <div id="card"
       class="flex flex-col justify-center py-8 gap-4 px-6 w-[450px] h-[588px] bg-[#FCFCFC] rounded-lg shadow-lg"
     >
-
-
-    <button id="mostrarCarrossel">Mostrar Carrossel</button>
+    <p id="centerTitle" class="sub hidden flex self-center text-[#121212]">Arraste para passar pelas imagens</p>
     <img src="./assets/theme.svg" alt="" id="theme" class="fixed top-6 right-6" onclick="mudarTema()">
     <div id="carrossel" class="escondido w-full items-center flex justify-center">
         <div class="slider overflow-scroll h-4/5 w-5/6 flex items-center rounded-lg" id="slider"></div>
@@ -59,9 +57,9 @@
         id="imgContainer"
         alt=""
       />
-      <div class="flex gap-2 justify-end w-full" id="container" onclick="giraGira()">
-        <p class="text-md">Veja mais Imagens</p>
-        <img src="./assets/images.svg" alt="" />
+      <div class="flex gap-2 justify-end w-full" id="container" id="mostrarCarrossel" onclick="mostrarCarrossel()">
+        <p id="textoVerImagens" class="text-md">Veja mais Imagens</p>
+        <img id="verMaisImagens" src="./assets/images.svg" alt="" />
       </div>
     </div>
     <div
