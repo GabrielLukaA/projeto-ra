@@ -18,8 +18,7 @@ document.getElementById('mostrarCarrossel').addEventListener('click', function()
   carrossel.classList.toggle('escondido');
 
   if (!carrossel.classList.contains('escondido')) {
-      // Exibir as imagens na lista
-      const imagens = ['imagem1.jpg', 'imagem2.jpg', 'imagem3.jpg']; // Substitua pelos URLs reais das suas imagens
+      // Exibir as imagens na lista // Substitua pelos URLs reais das suas imagens
       const slider = document.getElementById('slider');
 console.log(lista)
       lista.forEach(function(imagemURL) {
@@ -30,17 +29,33 @@ console.log(lista)
           slide.appendChild(img);
           slider.appendChild(slide);
       });
+      imgContainer.classList.add("hidden")
+      text.classList.add("hidden")
+      title.classList.add("hidden")
+      slider.classList.add("rotate-90")
   } else {
       // Limpar o carrossel ao ocultar
       const slider = document.getElementById('slider');
       slider.innerHTML = '';
+      imgContainer.classList.remove("hidden")
+      text.classList.remove("hidden")
+      title.classList.remove("hidden")
   }
 });
 
 
 function giraGira() {
-  imgContainer.src = lista[1];
-
+  cam.classList.add("hidden")
+  camVirada.classList.remove("hidden")
+  lista.push("/assets/targetImages/indice34.jpg");
+  lista.push("/assets/targetImages/indice22.jpg");
+  lista.push("/assets/targetImages/indice52.jpg");
+  lista.push("/assets/targetImages/indice59.jpg");
+  lista.push("/assets/targetImages/indice41.jpg");
+  lista.push("/assets/targetImages/indice71.jpg");
+  lista.push("/assets/targetImages/indice25.jpg");
+  const slider = document.querySelector("#slider");
+  slider.classList.add("rotate-90")
 }
 
 function direcionarCamera() {

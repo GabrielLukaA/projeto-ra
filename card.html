@@ -42,10 +42,10 @@
       class="flex flex-col justify-center py-8 gap-4 px-6 w-[450px] h-[588px] bg-[#FCFCFC] rounded-lg shadow-lg"
     >
 
-    
+
     <button id="mostrarCarrossel">Mostrar Carrossel</button>
-    <div id="carrossel" class="escondido">
-        <div class="slider" id="slider"></div>
+    <div id="carrossel" class="escondido w-full items-center flex justify-center">
+        <div class="slider overflow-scroll h-4/5 w-5/6 flex items-center rounded-lg" id="slider"></div>
     </div>
       <p id="title" class="title">Insertadora de bobinas</p>
       <p id="text" class="paragraph text-justify"></p>
@@ -57,7 +57,7 @@
         id="imgContainer"
         alt=""
       />
-      <div class="flex gap-2 justify-end w-full" onclick="giraGira()">
+      <div class="flex gap-2 justify-end w-full" id="container" onclick="giraGira()">
         <p class="text-md">Veja mais Imagens</p>
         <img src="./assets/images.svg" alt="" />
       </div>
