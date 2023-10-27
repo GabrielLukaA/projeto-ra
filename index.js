@@ -64,8 +64,8 @@ function carregarTargets(){
   //Verifica se está na câmera
   if(window.location.pathname == '/camera.html'){
     //Passa pela lista de targets adicionando o eventListener
-    console.log("dfhgd")
     targetImages.map( (target) => {
+      console.log("dfhgd")
       target.addEventListener("targetFound", event => {
         //Passa para o localStorage o indice do target
         alert("achei")
