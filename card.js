@@ -16,6 +16,13 @@ let girado = false;
 
 
 function mostrarCarrossel() {
+  lista.push("./assets/targetImages/indice34.jpg");
+  lista.push("./assets/targetImages/indice22.jpg");
+  lista.push("./assets/targetImages/indice52.jpg");
+  lista.push("./assets/targetImages/indice59.jpg");
+  lista.push("./assets/targetImages/indice41.jpg");
+  lista.push("./assets/targetImages/indice71.jpg");
+  lista.push("./assets/targetImages/indice25.jpg");
   const carrossel = document.getElementById('carrossel');
   carrossel.classList.toggle('escondido');
   if (!girado){
