@@ -6,6 +6,9 @@ if (JSON.parse(localStorage.getItem("theme")==null)){
   localStorage.setItem("theme", false)
 }
 else if (JSON.parse(localStorage.getItem("theme"))){
+  let button = document.querySelector("#hideARButton")
+  button.classList.add("bg-[#3278B0]")
+  button.classList.add("text-[#fcfcfc]")
   let fundo =  document.querySelector("#fundo")
   fundo.classList.add("bg-[#272727]")
   let theme = document.querySelector("#theme")
@@ -29,6 +32,8 @@ function mudarTema(){
     let banner = document.querySelector("#banner")
     banner.src = "./assets/bannerWeg.svg"
     let theme = document.querySelector("#theme")
+    button.classList.add("bg-[#3278B0]")
+    button.classList.add("text-[#fcfcfc]")
     theme.src = "./assets/themeDark.svg"
     dark = true
     localStorage.setItem("theme",dark)
@@ -38,6 +43,8 @@ function mudarTema(){
     let banner = document.querySelector("#banner")
     banner.src = "./assets/bannerWegLight.svg"
     let theme = document.querySelector("#theme")
+    button.classList.remove("bg-[#3278B0]")
+    button.classList.remove("text-[#fcfcfc]")
     theme.src = "./assets/theme.svg"
     dark = false
     localStorage.setItem("theme",dark)
@@ -57,7 +64,7 @@ if(window.location.pathname == '/camera.html'){
       //Passa para o localStorage o indice do target
       alert(targetImages.indexOf(target))
       localStorage.setItem('indice', targetImages.indexOf(target))
-      window.location.href =  'card.html';
+      window.location.href =  '/card.html';
     });
   });
 }
