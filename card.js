@@ -141,6 +141,8 @@ switch (indice) {
       "Ele retira partículas e impurezas do fluido, garantindo que o sistema funcione de maneira eficiente e " +
       "evitando danos aos componentes hidráulicos.";
     title.innerText = "Filtro Hidráulico";
+    imgContainer.src = "/assets/targetImages/indice13.jpg";
+    imgFundo.src = "/assets/targetImages/indice13.jpg";
     break;
   //perigo alta tesão
   // 3
@@ -150,12 +152,16 @@ switch (indice) {
       "elétricas elevadas. Essas cabines desempenham um papel crucial em ambientes industriais e de energia, fornecendo " +
       "isolamento elétrico, segurança para operadores e monitoramento dos sistemas elétricos de alta tensão.";
     title.innerText = "Cabine Elétrica de alta Tensão";
+    imgContainer.src = "/assets/targetImages/indice3.jpg";
+    imgFundo.src = "/assets/targetImages/indice3.jpg";
     break;
   //maquina por tras
   // 9
   case 9:
     text.innerText = "";
     title.innerText = "Visão Traseira da Máquina";
+    imgContainer.src = "/assets/targetImages/indice9.jpg";
+    imgFundo.src = "/assets/targetImages/indice9.jpg";
     break;
   //visao superior
   // 35, 27, 29
@@ -171,6 +177,8 @@ switch (indice) {
     text.innerText =
       "Placa possuindo o nome dos criadores da máquina. CTW - Turma: MM-42 de 2006 ";
     title.innerText = "Placa com o Nome dos Criadores";
+    imgContainer.src = "/assets/targetImages/indice65.jpg";
+    imgFundo.src = "/assets/targetImages/indice65.jpg";
     break;
   //insertadora
   //53
@@ -179,6 +187,8 @@ switch (indice) {
       " O estator é mantido no lugar nesta estação enquanto as bobinas são inseridas. " +
       "Isso garante a precisão do processo.";
     title.innerText = "Estação de Fixação do Estator (Stator Holding Station)";
+    imgContainer.src = "/assets/targetImages/indice53.jpg";
+    imgFundo.src = "/assets/targetImages/indice53.jpg";
     break;
   //bobinas
   //0, 64
@@ -190,6 +200,8 @@ switch (indice) {
       "inclui o fornecimento do fio condutor, o enrolamento das bobinas de forma espiralada e sua fixação na posição correta, " +
       "contribuindo para a produção de motores elétricos de alta qualidade e desempenho.";
     title.innerText = "Bobinas";
+    imgContainer.src = "/assets/targetImages/indice64.jpg";
+    imgFundo.src = "/assets/targetImages/indice64.jpg";
     break;
   //prendedor(?)/ trava seguranca //prendedor(diferente)
   // 1, 1(2), 69, 12, 51, 51(2), 37
@@ -204,6 +216,8 @@ switch (indice) {
       "e a integridade do processo. Normalmente, são controladas automaticamente pela máquina, desbloqueando apenas quando a " +
       "operação está segura, como após o término do ciclo de inserção, garantindo a segurança e a qualidade da montagem.";
     title.innerText = "Trava de Segurança";
+    imgContainer.src = "/assets/targetImages/indice51.jpg";
+    imgFundo.src = "/assets/targetImages/indice51.jpg";
     break;
   //fita
   //26, 31
@@ -211,6 +225,8 @@ switch (indice) {
   case 31:
     text.innerText = "";
     title.innerText = "Fita";
+    imgContainer.src = "/assets/targetImages/indice31.jpg";
+    imgFundo.src = "/assets/targetImages/indice31.jpg";
     break;
   //valvula e cabos/motores(?)
   // 8, 24, 14, 42
@@ -223,6 +239,8 @@ switch (indice) {
       "os movimentos das partes da máquina. Elas podem direcionar o fluido para diferentes atuadores, controlar a pressão " +
       "e a direção do movimento, e ajustar a velocidade das operações.";
     title.innerText = "Válvulas e cabos de Alimentação Hidráulica";
+    imgContainer.src = "/assets/targetImages/indice24.jpg";
+    imgFundo.src = "/assets/targetImages/indice24.jpg";
     break;
   //suporte (visao superior) / suporte (motor/valvula) (lateral)
   //40, 60, 16, 66, 23
@@ -235,6 +253,8 @@ switch (indice) {
       "Suporte sobre o qual estão as principais fontes de alimentção da máqina como " +
       "o motor, o filtro hidráulico e as válvulas, bem como medidores de pressão.";
     title.innerText = "Suporte de Alimentação";
+    imgContainer.src = "/assets/targetImages/indice40.jpg";
+    imgFundo.src = "/assets/targetImages/indice40.jpg";
     break;
   //placa motor
   //58
@@ -243,6 +263,8 @@ switch (indice) {
       "Contém as especificações do motor. Modelo: W22 Premium; Fabricante: WEG; " +
       "Data de Fabricação: 25 de Outubro de 2015.";
     title.innerText = "Placa do Motor";
+    imgContainer.src = "/assets/targetImages/indice58.jpg";
+    imgFundo.src = "/assets/targetImages/indice58.jpg";
     break;
   //conjunto lateral esquerda / direita
   // 47, 48, 11, 21, 62
@@ -253,6 +275,10 @@ switch (indice) {
   case 62:
     text.innerText = "";
     title.innerText = "Conjunto da Máquina visto de Lado";
+    imgContainer.src = "/assets/targetImages/indice34.jpg";
+    imgFundo.src = "/assets/targetImages/indice34.jpg";
+    imgContainer.src = "/assets/targetImages/indice62.jpg";
+    imgFundo.src = "/assets/targetImages/indice62.jpg";
     break;
   //rosca da insertadora
   //54, 55
@@ -260,6 +286,8 @@ switch (indice) {
   case 55:
     text.innerText = "Rosca que auxilia a Insertadora.";
     title.innerText = "Rosca da Insertadora";
+    imgContainer.src = "/assets/targetImages/indice54.jpg";
+    imgFundo.src = "/assets/targetImages/indice54.jpg";
     break;
   //painel detector de falha de isolacao
   // 56
@@ -269,6 +297,8 @@ switch (indice) {
       "e detectar quaisquer falhas, emitindo alertas quando ocorre um problema. Painel essencial para prevenir " +
       "curtos-circuitos e outros perigos associados a falhas na isolação de equipamentos elétricos.";
     title.innerText = "Painel Detector de Falha de Isolação";
+    imgContainer.src = "/assets/targetImages/indice56.jpg";
+    imgFundo.src = "/assets/targetImages/indice56.jpg";
     break;
   //conjunto painel controle/detector falha
   //61
@@ -277,6 +307,8 @@ switch (indice) {
       "Conjunto do Painel de Controle e do Painel Detector de Falha de Isolação. " +
       " São paineis que permitem o monitoramento, comportamento e controle adequados da máquina ";
     title.innerText = "Painel de Controle e Detector de Falha";
+    imgContainer.src = "/assets/targetImages/indice61.jpg";
+    imgFundo.src = "/assets/targetImages/indice61.jpg";
     break;
   default:
     alert("Não foi possível encontrar uma descrição para essa imagem!");
