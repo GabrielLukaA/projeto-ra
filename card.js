@@ -102,7 +102,6 @@ function mudarTema(){
     document.querySelector("#card").classList.remove("bg-[#111111]")
     title.classList.remove("text-[#fff]")
     text.classList.remove("text-[#fff]")
-    camVirada.src = "./assets/ion_camera.svg"
     document.querySelector("#textoVerImagens").classList.remove("text-[#fff]")
     cam.src = "./assets/ion_camera.svg"
     document.querySelector("#theme").src = "./assets/theme.svg"
