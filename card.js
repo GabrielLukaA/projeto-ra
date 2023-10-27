@@ -17,19 +17,19 @@ console.log(dark)
 let girado = false;
 
 
-// if (dark==true){
-//   document.querySelector("#body").classList.add("bg-[#272727]")
-//   document.querySelector("#card").classList.add("bg-[#111111]")
-//   document.querySelector("#textoVerImagens").classList.add("text-[#fff]")
-//   document.querySelector("#verMaisImagens").src = "./assets/imagesDark.svg"
-//   title.classList.add("text-[#fff]")
-//   text.classList.add("text-[#fff]")
-//   camVirada.src = "./assets/cameraDark.svg"
-//   cam.src = "./assets/cameraDark.svg"
-//   document.querySelector("#theme").src = "./assets/themeDark.svg"
-//   document.querySelector("#seta").src = "./assets/setaDark.svg"
-//   document.querySelector("#centerTitle").classList.add("text-[#fcfcfc]")
-// }
+if (dark==true){
+  document.querySelector("#body").classList.add("bg-[#272727]")
+  document.querySelector("#card").classList.add("bg-[#111111]")
+  document.querySelector("#textoVerImagens").classList.add("text-[#fff]")
+  document.querySelector("#verMaisImagens").src = "./assets/imagesDark.svg"
+  title.classList.add("text-[#fff]")
+  text.classList.add("text-[#fff]")
+  cam.src = "./assets/cameraDark.svg"
+  document.querySelector("#theme").src = "./assets/themeDark.svg"
+  document.querySelector("#seta").src = "./assets/setaDark.svg"
+  document.querySelector("#centerTitle").classList.add("text-[#fcfcfc]")
+
+}
 
 
 // function mostrarCarrossel() {
@@ -82,39 +82,39 @@ let girado = false;
 //   }
 // };
 
-// function mudarTema(){
-//   if (!dark){
-//     document.querySelector("#body").classList.add("bg-[#272727]")
-//     document.querySelector("#card").classList.add("bg-[#111111]")
-//     document.querySelector("#textoVerImagens").classList.add("text-[#fff]")
-//     document.querySelector("#verMaisImagens").src = "./assets/imagesDark.svg"
-//     title.classList.add("text-[#fff]")
-//     text.classList.add("text-[#fff]")
-//     camVirada.src = "./assets/cameraDark.svg"
-//     cam.src = "./assets/cameraDark.svg"
-//     document.querySelector("#theme").src = "./assets/themeDark.svg"
-//     document.querySelector("#seta").src = "./assets/setaDark.svg"
-//     document.querySelector("#centerTitle").classList.add("text-[#fcfcfc]")
-//     dark = true
-//     localStorage.setItem("theme",dark)
-//   } else {
-//     document.querySelector("#body").classList.remove("bg-[#272727]")
-//     document.querySelector("#card").classList.remove("bg-[#111111]")
-//     title.classList.remove("text-[#fff]")
-//     text.classList.remove("text-[#fff]")
-//     camVirada.src = "./assets/ion_camera.svg"
-//     document.querySelector("#textoVerImagens").classList.remove("text-[#fff]")
-//     cam.src = "./assets/ion_camera.svg"
-//     document.querySelector("#theme").src = "./assets/theme.svg"
-//     document.querySelector("#seta").src = "./assets/seta.svg"
-//     document.querySelector("#verMaisImagens").src = "./assets/images.svg"
-//     document.querySelector("#centerTitle").classList.remove("text-[#fcfcfc]")
-//     dark = false
-//     localStorage.setItem("theme",dark)
-//   }
+function mudarTema(){
+  if (!dark){
+    document.querySelector("#body").classList.add("bg-[#272727]")
+    document.querySelector("#card").classList.add("bg-[#111111]")
+    document.querySelector("#textoVerImagens").classList.add("text-[#fff]")
+    document.querySelector("#verMaisImagens").src = "./assets/imagesDark.svg"
+    title.classList.add("text-[#fff]")
+    text.classList.add("text-[#fff]")
+    camVirada.src = "./assets/cameraDark.svg"
+    cam.src = "./assets/cameraDark.svg"
+    document.querySelector("#theme").src = "./assets/themeDark.svg"
+    document.querySelector("#seta").src = "./assets/setaDark.svg"
+    document.querySelector("#centerTitle").classList.add("text-[#fcfcfc]")
+    dark = true
+    localStorage.setItem("theme",dark)
+  } else {
+    document.querySelector("#body").classList.remove("bg-[#272727]")
+    document.querySelector("#card").classList.remove("bg-[#111111]")
+    title.classList.remove("text-[#fff]")
+    text.classList.remove("text-[#fff]")
+    camVirada.src = "./assets/ion_camera.svg"
+    document.querySelector("#textoVerImagens").classList.remove("text-[#fff]")
+    cam.src = "./assets/ion_camera.svg"
+    document.querySelector("#theme").src = "./assets/theme.svg"
+    document.querySelector("#seta").src = "./assets/seta.svg"
+    document.querySelector("#verMaisImagens").src = "./assets/images.svg"
+    document.querySelector("#centerTitle").classList.remove("text-[#fcfcfc]")
+    dark = false
+    localStorage.setItem("theme",dark)
+  }
 
-//   // document.querySelector("#body").classList.remove("bg-[#1C78BB]")
-// }
+  // document.querySelector("#body").classList.remove("bg-[#1C78BB]")
+}
 
 
 function direcionarCamera() {
