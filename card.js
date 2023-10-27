@@ -10,21 +10,14 @@ let cam = document.querySelector("#cam");
 let camVirada = document.querySelector("#camVirada");
 let imgContains = document.querySelector("#imgContains");
 let imgContainer = document.querySelector("#imgContainer");
+let lista = [];
 
 function giraGira() {
-  // // body.classList.remove("flex-col")
-  // // fundo.classList.remove("w-full")
-  // fundo.classList.remove("h-[308px]")
-  // testando.style.height = "600px"
-  // testando.classList.add('w-full')
-  // fundo.classList.add("h-full")
-  // // testando.style.width = "308px";
-  // alert('mudei a width,  ela é' + testando.width)
-  // testando.classList.add("rotate-90")
 
-  // imgContains.classList.remove("hidden")
-  // title.classList.add("hidden")
-  imgContains.style.visibility = "visible";
+
+
+  imgContainer.src = lista[1]
+
 }
 
 function direcionarCamera() {
@@ -241,6 +234,13 @@ switch (indice) {
     title.innerText = "Válvulas e cabos de Alimentação Hidráulica";
     imgContainer.src = "/assets/targetImages/indice24.jpg";
     imgFundo.src = "/assets/targetImages/indice24.jpg";
+    lista.push("/assets/targetImages/indice15.jpg")
+    lista.push("/assets/targetImages/indice16.jpg")
+    lista.push("/assets/targetImages/indice17.jpg")
+    lista.push("/assets/targetImages/indice18.jpg")
+    lista.push("/assets/targetImages/indice19.jpg")
+    lista.push("/assets/targetImages/indice20.jpg")
+    lista.push("/assets/targetImages/indice21.jpg")
     break;
   //suporte (visao superior) / suporte (motor/valvula) (lateral)
   //40, 60, 16, 66, 23
