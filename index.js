@@ -55,7 +55,7 @@ function mudarTema(){
 function direcionarCamera(){
     window.location.href = 'camera.html';
 }
-
+alert(window.location.pathname)
 //Verifica se está na câmera
 if(window.location.pathname == '/camera.html'){
   //Passa pela lista de targets adicionando o eventListener
@@ -64,7 +64,7 @@ if(window.location.pathname == '/camera.html'){
       //Passa para o localStorage o indice do target
       alert(targetImages.indexOf(target))
       localStorage.setItem('indice', targetImages.indexOf(target))
-      window.location.href =  '/card.html';
+      window.location.href =  'card.html';
     });
   });
 }
