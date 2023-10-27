@@ -18,24 +18,36 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
 </head>
 
 <body>
-    <div class="w-screen h-screen items-center" id="papai">
-        <!-- <button class="py-[200px] absolute z-50 bg-blue-600" onclick="bucejo()">OI 9vinha</button> -->
-        <img src="./assets/Frame 5.svg" alt="" class="absolute top-6 left-6">
-        <h1 class="bg-red-500 font-bold text-2xl hidden" id="bah">EU TO NESSA PORRA CARALHO</h1>
-        <!-- <h5>sdjksjssadksdljsdaklçasdlçaslçlçadsklç çrjnoçi ipfk nijnm fnem gay</h5> -->
-        <h2 >testando</h2>
-        <button id="hideARButton" onclick="direcionarCamera()" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-            Iniciar Realidade Aumentada
-        </button>
-        <!-- <button id="startARButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Iniciar Realidade Aumentada
-        </button> -->
+    <div class="w-screen h-screen justify-center items-center flex flex-col gap-[54px] bg-[#1C78BB]" id="fundo">
+        <img src="./assets/theme.svg" alt="" id="theme" class="fixed top-6 right-6" onclick="mudarTema()">
+        <div class="flex flex-col gap-1 items-center text-center text-[#BDBDBD] px-[99px] textHome">
+            <p>
+                Seja bem vindo ao nosso projeto! Temos como objetivo principal explicar sobre a
+            </p>
+            <p class="text-[#FCFCFC] titleHome">Insertadora de Bobinas</p>
+            <p>enquanto trazemos a imersão com a realidade aumentada buscando facilitar a vida de todos os nossos
+                usuários.</p>
+        </div>
+        <img id="banner" src="./assets/bannerWegLight.svg"  alt="">
+        <div class="flex flex-col items-center gap-4">
+            <div id="parte1" class="flex flex-col gap-1 items-center text-center text-[#BDBDBD] textHome px-[99px]">
+                <p>Essa projeto foi desenvolvido fazendo uso do MindarJS para uma atividade WEG </p>
+                <p>enquanto trazemos a imersão com a realidade aumentada buscando facilitar a vida de todos os nossos
+                    usuários.</p>
+                </div>
+                <button id="hideARButton" onclick="direcionarCamera()" class="p-4 rounded-lg bg-[#FCFCFC] text-[#1C78BB]">
+                    Começar a Experiência
+                </button>
+    
+        </div>
+        
 
 
     </div>

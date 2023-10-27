@@ -1,91 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: "#da373d",
-          },
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: "#da373d",
         },
       },
-    };
-  </script>
+    },
+  };
+</script>
 
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
-  </head>
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+</head>
 
-  <body
-    id="body"
-    class="w-screen h-[840px] items-center justify-center flex bg-[#1C78BB]"
-  >
-    <img
-      src="./assets/seta.svg"
-      alt=""
-      id="seta"
-      class="fixed top-6 left-6 z-50"
-      onclick="direcionarCamera()"
-    />
-    <img
-      id="imgFundo"
-      alt="ué"
-      class="fixed h-[333px] blur-sm w-[840px] top-0 z-[-10]"
-    />
-    <div id="card"
-      class="flex flex-col justify-center py-8 gap-4 px-6 w-[450px] h-[588px] bg-[#FCFCFC] rounded-lg shadow-lg"
-    >
+<body id="body" class="w-screen h-[840px] items-center justify-center flex bg-[#1C78BB]">
+  <img src="./assets/seta.svg" alt="" id="seta" class="fixed top-6 left-6 z-50" onclick="direcionarHome()" />
+  <img id="imgFundo" alt="ué" class="fixed h-[333px] blur-sm w-[840px] top-0 z-[-10]" />
+  <div id="card"
+    class="flex flex-col justify-center py-8 gap-4 px-6 w-[450px] h-[588px] bg-[#FCFCFC] rounded-lg shadow-lg">
     <p id="centerTitle" class="sub hidden flex self-center text-[#121212]">Arraste para passar pelas imagens</p>
     <img src="./assets/theme.svg" alt="" id="theme" class="fixed top-6 right-6" onclick="mudarTema()">
     <div id="carrossel" class="escondido hidden w-full items-center flex justify-center">
-        <div class="slider overflow-scroll h-4/5 w-5/6 flex items-center rounded-lg" id="slider"></div>
+      <div class="slider overflow-scroll h-4/5 w-5/6 flex items-center rounded-lg" id="slider"></div>
     </div>
-      <p id="title" class="title text-[#121212]">Insertadora de bobinas</p>
-      <p id="text" class="paragraph text-[#121212] text-justify"></p>
+    <p id="title" class="title text-[#121212]">Insertadora de bobinas</p>
+    <p id="text" class="paragraph text-[#121212] text-justify"></p>
 
-      <img
-        src="./assets/imagemFundo.avif"
-        class="rounded-lg overflow-hidden"
-        height="300px"
-        id="imgContainer"
-        alt=""
-      />
-      <div class="flex gap-2 justify-end w-full" id="container" id="mostrarCarrossel" onclick="mostrarCarrossel()">
-        <p id="textoVerImagens" class="text-md">Veja mais Imagens</p>
-        <img id="verMaisImagens" src="./assets/images.svg" alt="" />
-      </div>
+    <img src="./assets/imagemFundo.avif" class="rounded-lg overflow-hidden" height="300px" id="imgContainer" alt="" />
+    <div class="flex gap-2 justify-end w-full" id="container" id="mostrarCarrossel" onclick="mostrarCarrossel()">
+      <p id="textoVerImagens" class="text-md">Ver Imagem(ns)</p>
+      <img id="verMaisImagens" src="./assets/images.svg" alt="" />
     </div>
-    <div
-      id="imgContains"
-      class="rotate-90 w-[450px] fixed top-[127px] left-[85px] h-[588px] flex items-center justify-center hidden overflow-hidden z-[50]"
-    >
-      <img
-        src="./assets/imagemFundo.avif"
-        class="rounded-lg"
-        id="imgContainer"
-        alt=""
-      />
-    </div>
+  </div>
+  <div id="imgContains"
+    class="rotate-90 w-[450px] fixed top-[127px] left-[85px] h-[588px] flex items-center justify-center hidden overflow-hidden z-[50]">
+    <img src="./assets/imagemFundo.avif" class="rounded-lg" id="imgContainer" alt="" />
+  </div>
 
-    <img
-      src="./assets/ion_camera.svg"
-      id="camVirada"
-      alt=""
-      class="absolute left-5 top-1/2 rotate-90 hidden"
-    />
-    <img
-      src="./assets/ion_camera.svg"
-      id="cam"
-      alt=""
-      class="fixed bottom-5 left-[275px] right-[275px]"
-    />
-    <script src="card.js"></script>
-  </body>
+  <img src="./assets/ion_camera.svg" id="cam" alt="" class="fixed bottom-5 left-[275px] right-[275px]" onclick="direcionarCamera()"/>
+  <script src="card.js"></script>
+</body>
+
 </html>

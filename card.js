@@ -11,8 +11,24 @@ let camVirada = document.querySelector("#camVirada");
 let imgContains = document.querySelector("#imgContains");
 let imgContainer = document.querySelector("#imgContainer");
 let lista = [];
-let dark = false;
+let dark =   JSON.parse(localStorage.getItem("theme"));
+console.log(dark)
 let girado = false;
+
+
+if (dark==true){
+  document.querySelector("#body").classList.add("bg-[#272727]")
+  document.querySelector("#card").classList.add("bg-[#111111]")
+  document.querySelector("#textoVerImagens").classList.add("text-[#fff]")
+  document.querySelector("#verMaisImagens").src = "./assets/imagesDark.svg"
+  title.classList.add("text-[#fff]")
+  text.classList.add("text-[#fff]")
+  camVirada.src = "./assets/cameraDark.svg"
+  cam.src = "./assets/cameraDark.svg"
+  document.querySelector("#theme").src = "./assets/themeDark.svg"
+  document.querySelector("#seta").src = "./assets/setaDark.svg"
+  document.querySelector("#centerTitle").classList.add("text-[#fcfcfc]")
+}
 
 
 function mostrarCarrossel() {
@@ -79,6 +95,7 @@ function mudarTema(){
     document.querySelector("#seta").src = "./assets/setaDark.svg"
     document.querySelector("#centerTitle").classList.add("text-[#fcfcfc]")
     dark = true
+    localStorage.setItem("theme",dark)
   } else {
     document.querySelector("#body").classList.remove("bg-[#272727]")
     document.querySelector("#card").classList.remove("bg-[#111111]")
@@ -92,6 +109,7 @@ function mudarTema(){
     document.querySelector("#verMaisImagens").src = "./assets/images.svg"
     document.querySelector("#centerTitle").classList.remove("text-[#fcfcfc]")
     dark = false
+    localStorage.setItem("theme",dark)
   }
 
   // document.querySelector("#body").classList.remove("bg-[#1C78BB]")
@@ -102,7 +120,10 @@ function direcionarCamera() {
   window.location.href = "camera.html";
 }
 
-alert(indice);
+function direcionarHome() {
+  window.location.href = "index.html";
+}
+
 
 switch (indice) {
   //motor //cabo motor
@@ -114,7 +135,6 @@ switch (indice) {
   case 41:
   case 71:
   case 25:
-    alert("uhuuuuuu");
     text.innerText =
       "O motor é usado para acionar o sistema hidráulico. Ele gera energia mecânica para operar " +
       "a bomba hidráulica, que pressuriza o fluido hidráulico. Esse fluido é então usado para controlar os movimentos " +
@@ -448,6 +468,5 @@ switch (indice) {
 
     break;
   default:
-    alert("Não foi possível encontrar uma descrição para essa imagem!");
     break;
 }
