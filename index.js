@@ -58,6 +58,8 @@ function direcionarCamera(){
 }
 alert(window.location.pathname)
 
+carregarTargets()
+
 function carregarTargets(){
   alert("carregou")
   //Verifica se está na câmera
