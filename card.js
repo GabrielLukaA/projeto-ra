@@ -8,7 +8,6 @@ let fundo = document.querySelector("#fundo");
 let imgFundo = document.querySelector("#imgFundo");
 let button = document.querySelector("#oi");
 let cam = document.querySelector("#cam");
-let camVirada = document.querySelector("#camVirada");
 let imgContains = document.querySelector("#imgContains");
 let imgContainer = document.querySelector("#imgContainer");
 let lista = [];
@@ -90,7 +89,6 @@ function mudarTema(){
     document.querySelector("#verMaisImagens").src = "./assets/imagesDark.svg"
     title.classList.add("text-[#fff]")
     text.classList.add("text-[#fff]")
-    camVirada.src = "./assets/cameraDark.svg"
     cam.src = "./assets/cameraDark.svg"
     document.querySelector("#theme").src = "./assets/themeDark.svg"
     document.querySelector("#seta").src = "./assets/setaDark.svg"
